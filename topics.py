@@ -96,7 +96,7 @@ class HyperparamOptimizer:
                           n_components: int,
                           min_cluster_size: int,
                           min_samples: int = None,
-                          random_state: int = None) -> hdbscan.HDBSCAN:
+                          random_state: int = None) -> HDBSCAN:
         """
         Generate HDBSCAN clusters from UMAP embeddings of embeddings
 
@@ -118,13 +118,13 @@ class HyperparamOptimizer:
 
         """
 
-        umap_embeddings = (umap.UMAP(n_neighbors=n_neighbors,
+        umap_embeddings = (UMAP(n_neighbors=n_neighbors,
                                      n_components=n_components,
                                      metric='cosine',
                                      random_state=random_state)
                                .fit_transform(self.doc_embeddings))
 
-        clusters = (hdbscan.HDBSCAN(min_cluster_size=min_cluster_size,
+        clusters = (HDBSCAN(min_cluster_size=min_cluster_size,
                                     min_samples=min_samples,
                                     metric='euclidean',
                                     gen_min_span_tree=True,
