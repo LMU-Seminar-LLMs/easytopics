@@ -19,15 +19,16 @@ class TextDB:
         Creates tables Documents, Questions,  Answers, Topics if they do not exist.
 
         """
-        with self.conn as conn:                         
-            conn.execute("""
+        with self.conn as conn:
+            cursor = conn.cursor()                         
+            cursor.execute("""
                 CREATE TABLE IF NOT EXISTS Documents (
                     id INTEGER PRIMARY KEY,
                     doc TEXT NOT NULL
                 )
                 """)
             
-            conn.execute("""
+            cursor.execute("""
                 CREATE TABLE IF NOT EXISTS Topics (
                     id INTEGER PRIMARY KEY,
                     external_id INT NOT NULL,
@@ -35,14 +36,14 @@ class TextDB:
                 )
                 """)
             
-            conn.execute("""
+            cursor.execute("""
                 CREATE TABLE IF NOT EXISTS Questions (
                     id INTEGER PRIMARY KEY,
                     question TEXT NOT NULL
                 )
                 """)
             
-            conn.execute("""
+            cursor.execute("""
                 CREATE TABLE IF NOT EXISTS Answers (
                     id INTEGER PRIMARY KEY,
                     doc_id INTEGER NOT NULL,
@@ -57,53 +58,65 @@ class TextDB:
             
     def insert_document(self, doc: str) -> int:
         with self.conn as conn:
-            conn.execute("INSERT INTO Documents (doc) VALUES (?)", (doc, ))
-            return conn.lastrowid
+            cursor = conn.cursor()
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO Documents (doc) VALUES (?)", (doc, ))
+            return cursor.lastrowid
     
     def insert_topic(self, external_id: int, topic_representation: str) -> int:
         with self.conn as conn:
-            conn.execute("INSERT INTO Topics (external_id, topic_representation) VALUES (?, ?)", (external_id, topic_representation))
-            return conn.lastrowid
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO Topics (external_id, topic_representation) VALUES (?, ?)", (external_id, topic_representation))
+            return cursor.lastrowid
         
     def insert_question(self, question: str) -> int:
         with self.conn as conn:
-            conn.execute("INSERT INTO Questions (question) VALUES (?)", (question, ))
-            return conn.lastrowid
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO Questions (question) VALUES (?)", (question, ))
+            return cursor.lastrowid
     
     def remove_question(self, question_id: int) -> None:
         with self.conn as conn:
-            conn.execute("DELETE FROM Questions WHERE id = ?", (question_id, ))
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM Questions WHERE id = ?", (question_id, ))
     
     def insert_answer(self, doc_id: int, question_id: int, answer: str) -> int:
         with self.conn as conn:
-            conn.execute("INSERT INTO Answers (doc_id, question_id, answer) VALUES (?, ?, ?)", (doc_id, question_id, answer))
-            return conn.lastrowid
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO Answers (doc_id, question_id, answer) VALUES (?, ?, ?)", (doc_id, question_id, answer))
+            return cursor.lastrowid
     
     def remove_answer(self, answer_id: int) -> None:
         with self.conn as conn:
-            conn.execute("DELETE FROM Answers WHERE id = ?", (answer_id, ))
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM Answers WHERE id = ?", (answer_id, ))
     
     def get_documents(self) -> list[str]:
         with self.conn as conn:
-            cursor = conn.execute("SELECT * FROM Documents")
+            cursor = conn.cursor()
+            cursor = cursor.execute("SELECT * FROM Documents")
             return cursor.fetchall()
     
     def get_questions(self) -> list[str]:
         with self.conn as conn:
-            cursor = conn.execute("SELECT * FROM Questions")
+            cursor = conn.cursor()
+            cursor = cursor.execute("SELECT * FROM Questions")
             return cursor.fetchall()
     
     def get_answers(self) -> list[str]:
         with self.conn as conn:
-            cursor = conn.execute("SELECT * FROM Answers")
+            cursor = conn.cursor()
+            cursor = cursor.execute("SELECT * FROM Answers")
             return cursor.fetchall()
     
     def get_topics(self) -> list[str]:
         with self.conn as conn:
-            cursor = conn.execute("SELECT * FROM Topics")
+            cursor = conn.cursor()
+            cursor = cursor.execute("SELECT * FROM Topics")
             return cursor.fetchall()
         
     def get_answers_by_doc(self, doc_id: int) -> list[tuple]:
         with self.conn as conn:
-            cursor = conn.execute("SELECT * FROM Answers WHERE doc_id = ?", (doc_id, ))
+            cursor = conn.cursor()
+            cursor = cursor.execute("SELECT * FROM Answers WHERE doc_id = ?", (doc_id, ))
             return cursor.fetchall()
