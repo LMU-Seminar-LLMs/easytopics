@@ -1,0 +1,3029 @@
+text;target;target_names
+"From: jchinnic@mach1.wlu.ca (john chinnick 8335 a)
+Subject: Wanted: 3d rendering lib for PC
+X-Newsreader: TIN [version 1.1 PL6]
+Organization: Wilfrid Laurier University
+Lines: 19
+
+Does any one know of a decent quality library of routines for
+performing 3D graphics modelling on the PC?
+
+Ideally the routines would be embeded in our application program.
+
+Requirements (wish list):
+- flat surface modelling (simple phong shading optional)
+- ability to plot hidden-line drawings
+- Texture mapping -- both procedural and bit map
+- modeling light sources (local, distant, and spot lights)
+- Ray-tracing
+- Radiosity (optional)
+
+Any comments would be appreciated.
+
+John Chinnick -- jchinnic@mach1.wlu.ca
+phone : (519) 888-9666
+-- 
+John Chinnick -- jchinnic@mach1.wlu.ca
+";1;comp.graphics
+"From: pdudey@willamette.edu (The Lisp SubGuru)
+Subject: Re: Where did the hacker ethic go?
+Article-I.D.: willamet.C6D4BJ.Du
+Organization: Willamette University, Salem OR
+Lines: 21
+
+In article <1993May1.092058.1@aurora.alaska.edu> pstlb@aurora.alaska.edu writes:
+>
+>  I put it to you thus:  Where HAS the hacker ethic gone?  If it still exists,
+>where?  And, if it DOES exist, why are those who call themselves ""hackers""
+>allowing this to perpetuate itself?  Why are they not creating new, innovative,
+>interesting ideas to stop the SOS from maintaining its choke hold on the
+>computer industry?
+
+How about the GNU people, handing out very good, free software?  I've also
+distributed two decent-sized programs myself, the Go player Fumiko (at
+ftp.u.washington.edu) and the Genetic Neural Network Programmer CEREBRUM
+(somewhere out there).
+
+I've only had time to write these programs because of scholarships and
+grants.  The intended benefit to society, or a loophole in the system? 
+
+-- 
+! Peter Dudey, 11 kyu, Lisp SubGuru, Order of the Golden Parentheses \FINGER !
+! Reformed Church of James ""Eric"" the Half-a-Bee, Dipped in Curry        \ME !
+! ""A shadowy flight into the dangerous world of a man who does not exist.""   !
+! Please mail me plastic spaceships:  900 State St. C-210, Salem, OR  97301  !
+";1;comp.graphics
+"From: Brandon.Vanevery@launchpad.unc.edu (Brandon Vanevery)
+Subject: 3d graphics software company info?
+Nntp-Posting-Host: lambada.oit.unc.edu
+Organization: University of North Carolina Extended Bulletin Board Service
+Lines: 19
+
+Within a few months, I'll be looking for a job in 3d computer graphics
+software.  I'm in need of info on companies that do it.  There's nothing
+in any of the FAQ's for this group, and nothing at siggraph.org (at least
+I couldn't find anything.)  The last Computer Graphics Career Handbook was
+dated 1991, had info on 40 companies, but nothing specific on any of them.
+
+Can people please direct me towards more current and detailed sources of
+information?  I'll post a summary of sources if there's interest.
+
+Also, could you please e-mail me, our news server is on the fritz. :(
+
+Thanks,
+Brandon
+
+--
+   The opinions expressed are not necessarily those of the University of
+     North Carolina at Chapel Hill, the Campus Office for Information
+        Technology, or the Experimental Bulletin Board Service.
+           internet:  laUNChpad.unc.edu or 152.2.22.80
+";1;comp.graphics
+"From: donc@cognos.com (Don Campbell)
+Subject: AVI to FLC converter
+Organization: Cognos Incorporated, Ottawa CANADA
+Lines: 18
+
+I am looking for a small utility that will convert a Microsoft Video (AVI)
+file to an Autodesk Animator Pro (FLC) file. Since AVIs also contain sound,
+it would be nice if this utility also stored the sound track as a WAV or VOC
+file. Currently I'm accomplishing this by saving the AVI as multiple DIBs
+using Video for Windows, then converting each DIB to a GIF, then loading the
+GIFs into Animator. For the sound, I load the original AVI into WavEdit and
+save it as a seperate WAV file. This requires too many steps to be productive.
+
+Any help will be GREATLY appreciated.
+
+          Thanks
+             Don
+
+-- 
+Don Campbell       internet:  donc@cognos.COM
+                       uucp:  cognos!donc  
+Cognos Inc.            mail: P.O. Box 9707, 3755 Riverside Drive, 
+(613) 738-1440               Ottawa Ontario, Canada. K1G 3Z4
+";1;comp.graphics
+"From: madler@cco.caltech.edu (Mark Adler)
+Subject: gamma correction
+Organization: California Institute of Technology, Pasadena
+Lines: 5
+NNTP-Posting-Host: sandman.caltech.edu
+
+
+Can someone who knows what they're talking about add a FAQ entry
+on gamma correction?  Thanks.
+
+mark
+";1;comp.graphics
+"From: jesse@eye.com (Jesse Lackey)
+Subject: Re: Fast polygon routine needed
+Keywords: polygon, needed
+Organization: 3D/EYE, Inc.  Ithaca, NY
+Lines: 20
+
+In article <1rguqoINNrc@edna.cc.swin.edu.au> alan@saturn.cs.swin.OZ.AU (Alan Christiansen) writes:
+>I believe that the algorithms you can get that will only draw convex
+>polygons can be much more efficient than those that can draw
+>concave / self intersecting polygons. 
+>This efficiency can largely be attributed to the fact that 
+>simple convex polygons only have a left and a right edge on each scan line.
+>Complex (figure 8 type polygons) can be a bit trickier.
+
+It is true the convex algorithm is faster than a general concave/multi outline
+algorithm, but not tremendously faster.  I spent awhile implementing and
+optimizing both flavors, and the convex turned out about 10% faster.  This is
+all C (on HP PA-RISC the compiler got the inner loop [shooting the span] as
+fast as possible, as far as I could tell).  For any sort of game the database
+to render is known ahead of time, and can be made all convex.  Definitely the
+way to go.
+
+p.s. sorry but my code CANNOT be made public domain....
+	jesse
+-- 
+Jesse Lackey  **  3D/Eye, Inc., Ithaca NY  **  jesse@eye.com  **  (607) 257-1381
+";1;comp.graphics
+"From: matess@gsusgi1.gsu.edu (Eliza Strickler)
+Subject: Re: I donwloaded a .bin file from a unix machine - now what?
+Organization: Georgia State University
+Lines: 42
+
+niko@iastate.edu (Nikolaus E Schuessler) writes:
+
+>In article <matess.735934793@gsusgi1.gsu.edu> matess@gsusgi1.gsu.edu (Eliza Strickler) writes:
+>>I just donwloaded a *.bin file from a unix machine which is
+>>supposed to be converted to a MAC format. Does anyone know 
+>>what I need to do to this file to get it into any Dos, Mac
+>>or Unix readable format. Someone mentioned fetch on the unix
+>>machine - is this correct? Could someone explain the .bin
+>>format a little?
+>>
+
+>This is almost certainly a MacBinary file which is an encoded version
+>of a mac file so the Resource fork and Data fork get preserved.
+>You need a program that converts this to a regular file. If this is a
+>macbinary file, you may have downloaded it in Text mode and is probably
+>corrupt (if you did). If you're using FTP to transfer it at any point make sure
+>you type ""binary"" first.
+
+>If you can open the file with a text editor and find
+>(This file must be converted with Bin....
+>at the top, it is a BinHex file and can be decoded with
+>BinHex 4.0 (among other programs).
+
+I opened the file with a text editor and it looks like:
+
+^Vnetwork storyboardpictPICT8BIM^E^......
+
+I have already tried BinHex which does not seem to work. 
+Any other ideas?
+
+>-- 
+>Niko Schuessler               
+>Project Vincent Systems Manager              email: niko@iastate.edu
+>Iowa State University Computation Center     voice: (515) 294-1672
+>Ames IA 50011                                snail: 291 Durham 
+-- 
+
+
+\|/--_   -_-      ----           ###         _- ----------------------
+-0    -_-   --       -__ %~- ____#0        _-   Elizabeth Strickler
+|\     ^                 0\~     /\   /\  -     
+|_(___/ \_    ||_________/     _/  |_/  \_      matess@gsusgi1.gsu.edu 
+";1;comp.graphics
+"From: d34863@puff.pnl.gov (Annette Koontz)
+Subject: Graphics software needed
+Organization: Battelle Pacific Northwest Labs, Richland, WA
+Lines: 34
+Distribution: world
+NNTP-Posting-Host: puff.pnl.gov
+Originator: d34863@puff.pnl.gov
+
+
+Hello,
+
+We are looking for a graphics package (preferably complete
+with source code) that will run on our UNIX operating system
+(a Sequent running DYNIX 3.2).  This graphics package must 
+support a wide variety of character based graphics devices 
+(PC's running a terminal emulator, primarily).  
+At this point, X11 graphics is not an option.
+
+This graphics program should, if possible, support these
+sorts of graphics operations (minimum requirements):
+
+   1) Complicated axes (log, linear, etc.) with fairly
+      precise axis labels (multi-line labels, etc.)
+      Major and minor tickmarks on axes, etc.	
+  
+   2) It would be nice if some limited amount of color
+      plotting were available, if the output device
+      supported it.
+
+We have a copy of gnuplot and are currently using it, but
+gnuplot has some limitations.  We are looking for something
+more robust than gnuplot.
+
+At this point, I'm looking for information about packages that
+might solve our problems.  If you have any information, please
+contact me at the above email address.  If the product you know
+about is a commercial software package, please send a phone number
+or email address so that I can contact them about pricing, etc.
+
+Annette Koontz
+Battelle Pacific Northwest
+Richland, WA 99352 USA
+";1;comp.graphics
+"From: cesws@cc.newcastle.edu.au
+Subject: patches for SUNGKS4.1 ?
+Lines: 17
+Organization: University of Newcastle, AUSTRALIA
+
+
+
+
+Due to a number of bugs in GKS4.1 under SUNOS 4.1.3, I installed
+patches 100533-15 and 100755-01. Patch 100533-15 appears to
+work fine and has fixed a number of problems. Patch 100755-01,
+however, which is required to fix a number of other annoying
+bugs, breaks with our applications.
+
+Is there a more recent revision of patch 10075?
+
+Any other ideas?
+
+Scott Sloan                      email   cesws@cc.newcastle.edu.au
+University of Newcastle          fax     +61 49 216991
+NSW
+Australia
+";1;comp.graphics
+"From: wilmshurst@reg.triumf.ca (WILMSHURST, PETER)
+Subject: Re: morphing
+Organization: TRIUMF: Tri-University Meson Facility
+Lines: 14
+Distribution: world
+NNTP-Posting-Host: reg.triumf.ca
+News-Software: VAX/VMS VNEWS 1.41    
+
+In article <13742@news.duke.edu>, seth@north6.acpub.duke.edu (Seth Wandersman) writes...
+> 
+>Keywords: 
+> 
+>I am looking for some morphing programs for DEC's or pc's. I looked for a program
+>called dmorph using archie but could not find it. I found a progrmam call
+>morpho but it only did grayscale images. Does anyone know where I should look?
+
+Try searching for DMORF, I think it's located on wuarchive.wustl.edu in a
+mirror directory... I've used it before, & it was pretty good!
+
+Pete Wilmshurst
+email:	wilmshurst@reg.triumf.ca
+
+";1;comp.graphics
+"From: amit@virgo.math.tau.ac.il (Amit Shaked)
+Subject: Digital Terrain Data for Visualization Needed
+Organization: School of Math & CS - Tel Aviv University , Tel Aviv , ISRAEL.
+Lines: 29
+
+
+We need terrain data for a visualization research currently taking place
+in Tel-Aviv university. We have two databases that we are currently working
+on, but we would like to work on more databases, possibly more complicated 
+and ones that will give prettier images.
+
+Before I describe what kind of data we need, let me mention that we are 
+going to present a paper titled ""Photo-Realistic Imaging of Digital Terrains""
+which describes the research and the results, in the EUROGRAPHICS'93 
+conference in Barcelona, this september. We are going to show a video-tape 
+with some of our results, so any good data that we will receive will be 
+presented in the tape, with a mention of the donator.
+
+We are working on databases consisting of aerial or satelite photographs, 
+and terrain elevation maps (DTM). 
+Each database consists of a 2D array of height values (any data format can
+be used for each value), and a corresponding 2D array of color values (can
+be gray-level, 256-color value or full 24-bit R/G/B values. Other format can
+also be used). We work on 512X512 and 1024x1024 resolution databases.
+
+If anybody has access to this kind of data, or knows where we can get such
+data files, please respond in this news group, or - better - email us
+directly :
+
+amit@math.tau.ac.il    (Amit Shaked), or
+danny@indigo.bgu.ac.il (Daniel Cohen)
+
+Of course, the names of the people who will help us get the data will be
+cited in our paper, and in further publications.
+";1;comp.graphics
+"From: pat@nick.csh.rit.edu (Pat Fleckenstein (A jedi in training))
+Subject: Re: 3-D widget wish list?
+Keywords: 3-D widget, manipulation, feedback, user interface design system
+Nntp-Posting-Host: nick.csh.rit.edu
+Organization: Computer Science House @ RIT
+Lines: 16
+
+
+What I'd like to see is the more generic N-dimensional widget set.
+I realize, that there wouldn't be a whole shitload of people
+who'd want more than 3, but why stop?
+
+All I need is a Widget with up to N viewports showing me different
+3-D or 2-D slices of my stuff.
+
+alter,
+pat
+
+-- 
+  pat@ritcsh.csh.rit.edu*paf3580@ritvax.rit.edu*paflecke@spectrum.xerox.com
+*****************************************************************************
+    ""All Objects are Macroscopic, Invisible, Non-Physical, or otherwise
+     Non-Heisenbergish.  Fuck the Cat!""  -- me
+";1;comp.graphics
+"From: dbushong@wang.com (Dave Bushong)
+Subject: Re: TIFF: philosophical significance of 42 (SILLY)
+Organization: Wang Labs, Lowell MA, USA
+Lines: 10
+
+rak@crosfield.co.uk (Richard Kirk) writes:
+
+>It's the number of legs on a centipede.
+>So, now you know.
+
+Is that the number of ""left"" legs, or both left and right?
+-- 
+Dave Bushong, Wang Laboratories, Inc.   Amateur Radio Callsign KZ1O
+Project Leader, Recognition products    kz1o@n0ary.#noca.ca.na
+Internet: dbushong@wang.com
+";1;comp.graphics
+"From: spl@pitstop.ucsd.edu (Steve Lamont)
+Subject: Re: CGM Files
+Organization: University of Calif., San Diego/Microscopy and Imaging Resource
+Lines: 32
+NNTP-Posting-Host: pitstop.ucsd.edu
+
+In article <MEYER.93May28133222@ibsen.geomatic.no> meyer@geomatic.no (Harald Martens Meyer) writes:
+>The only book I've found on the CGM format, is ""CGM and CGI"" by D.B.Arnold
+>& P.R.Bono from Springer-Verlag, ISBN 3-540-18950-5. It's not the best
+>book I've read though....
+
+Well, there *is* the standards document.  From the FAQ:
+
+12) How to order standards documents.
+
+The American National Standards Institute sells ANSI standards, and also
+ISO (international) standards.  Their sales office is at 1-212-642-4900,
+mailing address is 1430 Broadway, NY NY 10018.  It helps if you have the
+complete name and number.
+
+Some useful numbers to know:
+
+CGM (Computer Graphics Metafile) is ISO 8632-4 (1987).  GKS (Graphical
+Kernel System) is ANSI X3.124-1985. ...
+
+>If you want a viewer, try downloading ralcgm from unix.hensa.ac.uk,
+>/misc/unix/ralcgm/ralcgm.tar.Z
+
+You might also want to look at gplot from the folks at the Pittsburgh
+Supercomputer Center.  Fish around at calpe.psc.edu.  It is pretty
+nifty.
+
+							spl
+-- 
+Steve Lamont, SciViGuy -- (619) 534-7968 -- spl@szechuan.ucsd.edu
+San Diego Microscopy and Imaging Resource/UC San Diego/La Jolla, CA 92093-0608
+""A naked lunch is natural to us,/we eat reality sandwiches.
+But allegories are so much lettuce./Don't hide the madness."" -Allen Ginsberg
+";1;comp.graphics
+"From: eschbach@abc.wrc.xerox.com (Reiner Eschbach)
+Subject: Re: Turning photographic images into thermal print and/or negatives
+Organization: Xerox
+Lines: 24
+
+In article <1993Apr28.162343.14513@seq.uncwil.edu> hawks@seq.uncwil.edu (David Hawks) writes:
+
+>It is for a business and the end product has to be a photograph.
+>I take damaged black and whites, usually old, some very, and repair them
+>by hand at present.  I would like to do this by using a computer.
+>I am just trying to find a vendor who can convert my computer stored
+>images to negatives or thermal print.  The customer will want his/her
+>copy as much as possible like a brand new original photgraph.
+
+There are several CRT-to-film writers around. Agfa has some, they also might
+be called Matrix?, and I am pretty sure other companies sell the same
+equipment. You might want to talk to any company in your area that does
+presentation slides or offers graphics services. They should have those
+machines and they might point you to a local vendor. From there on it's all
+a question of money. They units are essentially high res CRTs plus a filter
+wheel plus a 35mm camera and a computer hook-up.
+
+>-- David
+
+Reiner
+
+p.s. I am currently shooting my slides for my next talk on one of the Agfa
+machines.
+
+";1;comp.graphics
+"From: ddennis@nyx.cs.du.edu (Dave Dennis)
+Subject: Re: Adobe Type Manager - what good is it??
+Organization: University of Denver, Dept. of Math & Comp. Sci.
+Lines: 29
+
+menchett@dws015.unr.edu (Peter J Menchetti) writes:
+
+>The subject says it all. I bought Adobe Type Manager and find it completely
+>useless. I ftped some atm fonts and couldn't install them. What's the use?
+>Are you supposed to be able to convert ATM fonts to Truetype?
+
+>If there's anyone out there who has this program and actually finds it 
+>useful, enlighten me!
+
+>Pete
+
+There are some tricks to installing ATM to windows... install them first
+to dos, then run the ATM control panel to get them into windows.
+
+The best reason for ATM is that Adobe IS the standard.  Truetype is a
+failed MS venture to undercut Adobe when Adobe was being nasty about
+keeping their formats proprietary.  Just about any service bureau or print
+shop will smirk and send you on your way if you bring a TrueType document
+to them for high resolution printing or ripping.
+
+Although there are lots of pretty TT fonts floating around, they are really
+for dot matrix or your own lazer printer.
+However, you can convert your TT fonts with Fontmonger or some similar program
+to ATM fonts for high end stuff.
+
+If you are using dot matrix for all your printing, you may have wasted
+your money!
+
+Dave
+";1;comp.graphics
+"From: stern@brahms.udel.edu (Garland Stern)
+Subject: looking for hot Mac 3D anim software
+Distribution: usa
+Organization: University of Delaware
+Lines: 6
+Nntp-Posting-Host: brahms.udel.edu
+
+I am interested in finding 3D animation programs for the Mac.
+I am especially interested in any programs that don't exist
+in a PC port and are so good that they would make me go buy
+a Mac.  Do any such exist?
+
+Thanks in advance
+";1;comp.graphics
+"From: ricky@vnet.ibm.com (Rick Turner)
+Subject: Re: raw2gif ?
+Disclaimer: This posting represents the poster's views, not necessarily those of IBM.
+Nntp-Posting-Host: danebury.hursley.ibm.com
+Organization: IBM UK Labs
+Lines: 5
+
+You can use PBM's 'rawtopgm' to convert three raw (r, g, b) files to pgm format. Then you can use pgm3toppm to convert the pgm files to a composite ppm file,
+and feed this to cjpeg for compression. Slow, and circuitous, but it will
+work.
+
+Rick
+";1;comp.graphics
+"From: rak@crosfield.co.uk (Richard Kirk)
+Subject: Re: TIFF: philosophical significance of 42 (SILLY)
+Organization: Crosfield, Hemel Hempstead, UK
+Lines: 9
+
+It's the number of legs on a centipede.
+So, now you know.
+
+
+
+
+-- 
+Richard Kirk         Image Processing Group    Crosfield Electronics Ltd. U.K.
+rak@crosfield.co.uk  0442-230000 x3361/3591    Hemel Hempstead, Herts, HP2 7RH
+";1;comp.graphics
+"From: dfr@usna.navy.mil (PROF D. Rogers (EAS FAC))
+Subject: Re: Newsgroup Split
+Organization: U. S. Naval Academy
+Lines: 23
+
+In article <C5r9BM.2LH@mach1.wlu.ca> mart4678@mach1.wlu.ca (Phil Martin u) writes:
+!Chris Herringshaw (tdawson@engin.umich.edu) wrote:
+!: Concerning the proposed newsgroup split, I personally am not in favor of
+!: doing this.  I learn an awful lot about all aspects of graphics by reading
+!: this group, from code to hardware to algorithms.  I just think making 5
+!: different groups out of this is a wate, and will only result in a few posts
+!: a week per group.  I kind of like the convenience of having one big forum
+!: for discussing all aspects of graphics.  Anyone else feel this way?
+!: Just curious.
+!
+!Yes. I also like knowing where to go to ask a question without getting
+!hell for putting it in the wrong newsgroup.
+
+I am also against splitting the group. The traffic will decrease
+on any given subject but the required net bandwidth will INCREASE
+because of multiply cross-postings.
+
+I just went through this with another group I continuously read.
+It is now almost at the point where it is no longer worth reading.
+
+Strongly suggest NOT doing this.
+
+Dave Rogers
+";1;comp.graphics
+"From: Roger De Abreu <roger@glenn.uwaterloo.ca>
+Subject: Re: good autoexec.bat and config.sys for windows 3.1
+X-Xxmessage-Id: <A8181B0C6101361D@eolite.uwaterloo.ca>
+X-Xxdate: Thu, 13 May 93 15:34:36 GMT
+Organization: Earth Observations Lab
+X-Useragent: Nuntius v1.1.1d11
+Lines: 34
+
+In article <C6uF2D.Gz2@acsu.buffalo.edu> Kan Mongwa,
+mongwa@acsu.buffalo.edu writes:
+>>In article <C6s2ux.n0F@acsu.buffalo.edu> Kan Mongwa,
+>>mongwa@acsu.buffalo.edu writes:
+>>>Do not load smartdrv.sys if you are using stacker. (this applies for
+>>windows).
+
+I replied:
+
+>>Why ???  Do you mean, just use smartdrv.exe in autoexec.bat ???
+>>
+>>Roger
+
+You answered:
+
+>Quoting from \windows\setup.txt
+>Under the section for using stacker
+>
+>""..For best performance, do not use SMARTDrive to cache the
+>compressed drive. You only need to cache the uncompressed drive...""
+>
+>Check it out for yourself!
+
+I think it is important to clear up your first reply.  You gave the
+impression that you should not use smartdrive with stacker.   You are
+correct re: caching the compressed drive.  However, as I understand it,
+you can cache the uncompressed drive.  Thus if you have compressed your
+disk C:, you will have a C and probably a D drive under stacker.  C being
+the compressed disk (which is just a large file on D:) and D being the
+uncompressed disk.  You should only attempt to stack D:.  In fact, with
+Win 3.1 and smartdrv.exe, it seems smart enough to automatically default
+to stacking your A,B and D drives.  
+
+Roger
+";2;comp.os.ms-windows.misc
+"From: gurgle@netcom.com (Pete Gontier)
+Subject: Re: Challenge to Microsoft supporters.
+Organization: cellular
+Lines: 10
+
+mfischer@ucsd.edu (Mike Fischer) writes:
+
+>You're missing the main point of capitalism in the first place!
+>COMPETITION BREEDS EXCELLENCE.
+
+Yes, where commodities are concerned. Imagining that capitalist
+theorists had software in mind when they wrote their grand treatises
+on ""the main point of capitalism"" is non-productive.
+-- 
+ Pete Gontier // EC Technology // gurgle@netcom.com
+";2;comp.os.ms-windows.misc
+"From: louray@seas.gwu.edu (Michael Panayiotakis)
+Subject: Re: What does the .bmp format mean?
+Organization: George Washington University
+Lines: 18
+
+In article <robertsa.735922084@unix2.tcd.ie> robertsa@unix2.tcd.ie (Andrew L. Roberts) writes:
+>What exactly does the windows bitmap format look like? I mean, how is
+>the data stored: width, height, no. of colours, bitmap data? I couldn't
+>find anything in ths user manual, is there any other reference material
+>which would give me this information?
+>
+>Thanks,
+>Andrew
+
+
+Well, this is *only* a guess:  If it goes by the ""true"" meaning of ""bit
+map"", then it holds (x,y,c) where x pixel number in th ex-direction, y:
+pixel-number in the y-dir, c: colour.
+-- 
+pe-|| ||  MICHAEL PANAYIOTAKIS: louray@seas.gwu.edu 
+ace|| ||                                   ...!uunet!seas.gwu.edu!louray
+|||| \/|  *how do make a ms-windows .grp file reflect a HD directory??*
+\\\\   |  ""well I ain't always right, but I've never been wrong..""(gd)
+";2;comp.os.ms-windows.misc
+"From: simardde@ERE.UMontreal.CA (Simard Denis)
+Subject: Re: Windows zip/unzip
+Organization: Universite de Montreal
+Lines: 22
+
+pwb@aerg.canberra.edu.au (Paul Blackman) writes:
+
+>In article <1rl9b6$h3c@sol.deakin.OZ.AU> russ@deakin.OZ.AU (Russ Sharp) writes:
+>>We are using pkzip V2.04 and I am interested to hear from
+>>people who have used one of the many Windows programs that
+>>call these.
+>>
+>>Which ones are available and does any one stand out amongst
+>>the rest?
+>>
+>>Is there a full windows version that does not call the DOS 
+>>PKZIP/PKUNZIP commands?
+
+>Yes Russ, there is. 
+>QuinZip is a Windows version but I don't think it handles
+>all the functions available in the DOS version.
+
+The problem is that QuinZip is very very slow.  So I think that WinZip 4.0
+is still the best choice to use pkzip in Windows!
+
+						Denis Simard, Montreal
+						(simardde@ere.umontreal.ca)
+";2;comp.os.ms-windows.misc
+"From: louray@seas.gwu.edu (Michael Panayiotakis)
+Subject: Re: Windows zip/unzip
+Organization: George Washington University
+Lines: 42
+
+In article <1rl9b6$h3c@sol.deakin.OZ.AU> russ@deakin.OZ.AU (Russ Sharp) writes:
+
+>We are using pkzip V2.04 and I am interested to hear from
+>people who have used one of the many Windows programs that
+>call these.
+>Which ones are available and does any one stand out amongst
+>the rest?
+>
+Well, I got  WINZIP from cica (don't know which version, but I think
+it's the latest, as this is not long ago), and I was initially imressed.
+But here's the low-down:
+
+WINZIP is a *great* progra, *as long as you only unzip*.  It lets you
+vew files, unzip only selected files, and even puts the files in a
+/checkout directory, and creates a ""checkout"" .grp and group if you want
+to check the program out.  It even prompts for deletion of these on
+exit, if you didn;t like the program.
+
+*HOWEVER* (big however over here).  I have problems zipping.  I don't
+konw specifics on this, or ammount of consistency, but sometimes when I
+""zip"" a few files, or add a file to a .zip, dos will violate something
+or other, and I'll be asked (in a kind, micro$oft kind of way) to quit
+all applications, quit windows, and restart my computer.  I don't know
+(as I said) how consistent this is, as I jdont' zip much (and when I do,
+now I just go to dos and use it from there, or just use the ""run"" cmd)
+but I *do* know it's happened when I added files to an existing .zip
+file, *and* when I created a new .zip file, using selected files only.
+I don't know if it's happened when I zip an entire dir.
+
+Still, it has a rather nice interface, and quite useful ""unzip""ing
+functions.  If the above is fixed, I'll be the first to register the new
+ver.  (as for now, a good old, ""run-->unzip *.zip"" will work.
+
+(PS> if a new ver *is* out that fixes these, please let me know).
+
+peace,
+Mickey
+-- 
+pe-|| ||  MICHAEL PANAYIOTAKIS: louray@seas.gwu.edu 
+ace|| ||                                   ...!uunet!seas.gwu.edu!louray
+|||| \/|  *how do make a ms-windows .grp file reflect a HD directory??*
+\\\\   |  ""well I ain't always right, but I've never been wrong..""(gd)
+";2;comp.os.ms-windows.misc
+"From: mayorga@mr_slate.cis.udel.edu (Anibal Mayorga)
+Subject: Disk Image Question
+Organization: University of Delaware, Newark
+Lines: 17
+Distribution: usa
+NNTP-Posting-Host: mr_slate.cis.udel.edu
+
+Hello,
+
+recently I noticed there is a directory named ""DiskImage"" in my disk.  I didn't
+notice it before and I wonder if while installing an application an image of 
+the disk was created, or if Win3.1 automatically created a backup of its files.
+I couldn't find any documentation on the diskimage utility; having an image of
+the disk is taking *a lot* of disk space.  Does anybody know if this is just 
+something the people who installed Win3.1 did or it is a backup mechanism?
+
+Thanks,
+
+Anibal
+-- 
+---------------------------------------------------------------------------
+Anibal Mayorga              |  21 Wenark Dr #7        | W: (302) 831-8704 
+mayorga@cis.udel.edu        |  Newark, DE 19713       | H: (302) 453-0309
+---------------------------------------------------------------------------
+";2;comp.os.ms-windows.misc
+"From: andreas@sun0.urz.uni-heidelberg.de (Andreas Helke)
+Subject: Re: Please help an Amiga user find comfort in Windows
+Lines: 51
+Organization: Molekulare Genetik, Universitaet Heidelberg, Germany
+
+In article <1t9ada$og0@fitz.TC.Cornell.EDU> stlombo@eos.acm.rpi.edu (Steve J. Lombardi) writes:
+>From: stlombo@eos.acm.rpi.edu (Steve J. Lombardi)
+>Subject: Please help an Amiga user find comfort in Windows
+>Date: 18 May 1993 00:25:14 GMT
+>By night I'm an Amiga user. By day I work with windows. I'd be much more 
+>comfortable in windows if I had Two things.
+>
+>1. A good Personal information manager. You know- a calendar, address book,
+>reminder list etc... rolled into one clean interface.
+>
+>2. A good file manager. Microsofts is very poor by my standards. How
+>about one that has a left and right window and allows file operations 
+>between them. being able to launch programs from the same interface
+>would be nice. as well as text reading and graphics viewing. Those
+>who are familiar with Directory Opus on the Amiga know what I'm
+>looking for.
+I have written the file manager HFM, wich has two windows which compare
+the files in two directorys to find out wether there are equal or 
+similar files. The 7 most important operations, copy, move, delete,
+show the file, start a progam, navigate in the directory tree can be
+invoked by dragging a directory entry with the mouse. This is very
+convenient, because the selection of the file and the operation to
+be performed, occur in one move. For bitmap graphic viewing the
+program vpic can be integrated, for spreadsheat and database files
+I use the view program from PCTOOLS 7.1. HFM can be configured to
+use arbitrary viewers to show special data formats. It does
+also present archives from pkzip etc. as simulated subdirectorys.
+This filemanager has a somewhat non standart user interface, but
+it is very convienient to use and is the prefered file manager 
+in several labs in our university. 
+The drawback of this filemanager is, it's still a dos program and
+the development of a windows version has not yet begun. I use the
+program package run18.zip, where run tells its windows companion
+sched.exe which windows program should be started. In this way you
+can start a windows program from a dosbox. The new version 3.19
+(to be released soon) includes a new command for automating this
+windows program start.
+FTP archives for the mentioned programs (all these archives have several
+mirror sites)
+Simtel oak.oakland.edu 141.210.10.117
+/filutl/hfm318.zip
+/gif/vpic60e.zip
+Garbo garbo.uwasa.fi 128.214.87.1
+/dirutil/hfm318.zip
+CICA ftp.cica.indiana.edu 129.79.20.17 
+/util/run18.zip
+-
+
+Andreas Helke, Molekulare Genetik, Universitaet Heidelberg, Germany
+email un69ef@genius.embnet.dkfz-heidelberg.de
+The header of this posting does not contain a valid smtp mail address.
+";2;comp.os.ms-windows.misc
+"From: slc@a2.cim.cdc.com (Steve Chesney x4662)
+Subject: Internationalization of Applications and Muulti-byte Characters
+Keywords: i18N
+Reply-To: slc@.cdc.com
+Organization: Metaphase Technology, Inc.
+Lines: 11
+
+We are researching what support there is on various platforms for applications
+to use multi-byte characters (e.g., Japanese Kanji).  We know that Unix
+and X Windows can contain support for the i18N standard (depending on level
+and platform).  What support for i18N or wide characters exists on the Mac, 
+Windows 3.1 and Windows NT?
+
+-- 
+Steve Chesney                                    slc@catherine.cim.cdc.com     
+Metaphase Technology Inc.                        612-482-4662 (voice)
+4233 North Lexington Avenue                      612-482-4001 (fax)
+Arden Hills, MN  55126
+";2;comp.os.ms-windows.misc
+"From: thomasez@dhhalden.no (THOMAS LUNDQUIST)
+Subject: Re: Challenge to Microsoft supporters.
+Lines: 43
+Nntp-Posting-Host: pc134
+Organization: Ostfold College
+
+In article <14112@news.duke.edu> kdb@sunbar.mc.duke.edu.mc.duke.edu (Kurt Bollacker) writes:
+>From: kdb@sunbar.mc.duke.edu.mc.duke.edu (Kurt Bollacker)
+>Subject: Challenge to Microsoft supporters.
+>Date: 30 Apr 93 14:58:54 GMT
+>Microsoft is the largest software company on the planet, yet I cannot think
+>of even *ONE* computing concept that they innovated and brought to market
+>before anyone else.  Xerox-PARC/Apple, Osborne, NeXT, GNU and others have 
+>been pioneers and led the way to the future of computing.  What has
+>microsoft done to be a technological leader?  I posted this question before,
+>but I got nary a reply.  I make the challenge now to anyone who can come up
+>with something-especially Microsoft employees.  I get no response this time,
+>I guess it pretty much assures me that there is none--which is what I
+>suspect anyway.
+>
+>######################################################################
+>Kurt D. Bollacker			Duke University Medical Center
+>kdb@sunbar.mc.duke.edu				      Durham, NC 27710
+>######################################################################
+
+- They invented the ""how to make money on others ideas"".
+- They made money.
+- They weren't in the air at the wrong time...
+
+Admit it BillG is a damn smart guy. How many out there can make money on 
+almost useless products...Useless even if you look at the time Dos were 
+written..it stinked already then..
+
+If I could choose one marketing guy in the world, I think I would choose 
+him. He's so good that almost everyone hates him, but they still use his 
+stuff...
+
+
+ ThomasEZ.
+
+               ' I'm not perfect, but I'm perfect for you. '
+
+***************************************************************************** 
+* ShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesSha * 
+* veTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveT *
+* heWhalesShaveTheWhalesShaveTheWhalesShaveBillGatesShaveTheWhalesShaveTheW *
+* halesShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhal *
+* esShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesShaveTheWhalesS *
+*****************************************************************************
+";2;comp.os.ms-windows.misc
+"From: chapman@cs.sfu.ca (John Chapman)
+Subject: TIFF file viewer needed
+Organization: CSS, Simon Fraser University, Burnaby, B.C., Canada
+Lines: 13
+
+Hello - I am in need of a file viewer for 24 bit TIFF images, to run under
+        windows (3.1 if it matters); alternatively a package to run an
+        X-server on top of windows would do very well. Unfortunately the
+        budget for this is limited so whatever I end up using has to be
+        public domain or very inexpensive. Thanks in advance for any help,
+
+        john
+
+
+
+chapman@cs.sfu.ca
+
+
+";2;comp.os.ms-windows.misc
+"From: thg@cam-orl.co.uk (Tim Glauert)
+Subject: Re: Challenge to Microsoft supporters.
+Nntp-Posting-Host: okra.cam-orl.co.uk
+Organization: Olivetti Research Ltd, Cambridge, England.
+Lines: 34
+
+In article <15008@news.duke.edu>, kdb@sunbar.mc.duke.edu (Kurt Bollacker) writes:
+|> Tim Glauert (thg@cam-orl.co.uk) wrote:
+|> : In other words, it is your *opinion* that MSW3.1 is inferior to its
+|> : competition.  That's not the same as MSW3.1 being objectively inferior.
+|> 
+|> No.  It is technically inferior to the OS/GUIs that I listed.
+
+OK, now you are starting to define your criteria.
+
+|> By this criterion, it is inferior.
+
+I'm afraid that you haven't actually proved that.  You have shown that some
+aspects of MSW3.1 are technically inferior to other systems.  As I said
+earlier, if this is all you are trying to say then it is trivially true.
+But some aspects of MSW3.1 are actually technically superior to each of the
+other systems (resource requirements, performace, device support, printer
+support, GUI etc.)
+
+[ BTW, I'd love to see the studies which show that UNIX/X is as easy to
+  learn as Windows! ]
+
+But I might even agree that, on balance, MSW3.1 is technically inferior to
+some of the competition. This still does not prove your point.
+
+|>  If you have another, then perhaps I am incorrect.
+
+Range of available applications? Base OS cost? Cost of applications? Cost
+of hardware? Multi-platform support?  Quality of the after-sales service?
+Availability of books/training materials? Support for visual and physical
+handicaps?  Suitability for use in mobile computing? Quality of
+Documentation?
+
+If you think that technical excellence is the only factor when deciding on
+an OS, or indeed the primary factor, you need to think again.
+";2;comp.os.ms-windows.misc
+"From: ad960@yfn.ysu.edu (Thomas Smith)
+Subject: Re: HP DESKJET 500C
+Organization: Youngstown State/Youngstown Free-Net
+Lines: 9
+NNTP-Posting-Host: yfn.ysu.edu
+
+
+	Try using Laser printer/copier paper, it works quite
+well and is cheaper than HPspecial paper.
+
+-- 
+<<<<<<<<<<<<<<<<<<<<<<<Thomas A. Smith II>>>>>>>>>>>>>>>>>>>>>>>>
+Youngstown State University
+Chemistry Dept.
+ad960@yfn.ysu.edu
+";2;comp.os.ms-windows.misc
+"From: timbol@netcom.com (Mike Timbol)
+Subject: Re: re: Challenge to Microsoft supporters.
+Organization: Netcom - Online Communication Services (408 241-9760 guest)
+Distribution: usa
+Lines: 25
+
+In article <C6y2Mz.Dnp@news.claremont.edu> tlilley@jarthur.claremont.edu (Ted) writes:
+>In article <timbolC6y1B4.7n0@netcom.com> timbol@netcom.com (Mike Timbol) writes:
+>>>>Anyway, how about this: I give you my word, without naming sources, that IBM
+>>>>paid companies to write applications for OS/2.  Satisfied?
+>>>
+>>>Not really. Query: What do you mean by PAID?  Are you implying that helped to
+>>>offset development costs, or paid for the entire cost of producing the product.
+>>
+>>I mean they paid the companies that developed the applications (i.e. ""We'll
+>>give you x million dollars if you port application y to OS/2"").  I suppose
+>>the company in question could use the x million dollars for whatever they
+>>want.
+>
+>Would you like to post figures?
+>(for MS as well, I suppose).
+>
+>Ted
+
+No, I'd rather not.  First of all, I don't have exact figures, and I don't
+want to disclose how I know this.  However, I will say that Jim Francis
+from Microsoft just posted a figure of $26 million (payment from IBM to
+Borland) and that's somewhere in the range that I've heard.
+
+     - Mike
+
+";2;comp.os.ms-windows.misc
+"From: jls@atglab.atg.com (Jerome Schneider)
+Reply-To: jls@atg.com
+Distribution: world
+Subject: Re: QUESTIONS about DOS external JOIN command...
+Organization: Aspen Technology Group
+X-Mailer: UUPC/bsnews 2.1 modified
+Lines: 66
+
+
+In article <1srg8c$i54@spud.Hyperion.COM>, the author writes:
+>    I am setting up my DOS/UNIX box on a 116M IDE and a 412M SCSI drive
+> and was wondering about the use of the (MS-DOS 5.0) JOIN command.  I
+> like the way it sets things up since I won't have to stick with the C:
+> D: & E: (crap) that DOS enforces.  I like how it would mimic mount
+> points of UNIX filesystems.  I have heard that there were problems
+> with using it, or at least under older versions of DOS.  Please tell!
+
+I have been using the JOIN command for many years now, mostly with good
+success in duplicating unix-style file mounts.  You will hear lots of
+people cursing JOIN because they confuse it with the dos APPEND command
+(a truely gnarly hack), but don't believe them.  You also will hear
+people saying that Microsoft recommends that you not use JOIN.  But, in
+Microsoft's Windows 4 Workgroups Resource toolkit, the following appears:
+
+  ""JOIN, an MS-DOS utility, works fine with Windows for Workgroups 3.1 if
+  you do not change the state of the joined drives during a Windows for
+  Workgroups 3.1 session. This includes adding or removing joined drives
+  from within Windows for Workgroups. We recommend that you do not use
+  JOIN when running Windows Setup or Windows for Workgroups 3.1.""
+
+Within this caveat, JOIN appears to be valid under windows.  However, I
+have found a couple of applications that don't deal well with filesystems
+that have been ""mounted"" using join.
+
+In particular, the worst offender is Word for Windows 2.0x.  It gets very
+confused when you edit and then try to save a file on a joined drive. It
+wants to create the saved file as ~NNNNN.tmp in the current dir, then
+delete the old file and rename the ~NNNNN.tmp file to the *.doc file.
+
+Unfortunately, WfW usually writes the ~NNNNN.tmp file in some idiotic
+place other than the current directory (often in the root dir of the
+joined filesystem, but not always).  Then, after deleting the original
+*.doc file, it can't find the ~NNNNN.tmp file to rename it.  Unless you
+search your disk systems, the document is gone.
+
+I have also found subtle problems using the MKS toolkit from a DOS box
+when JOINed filesystems are present.  I used to join c:\temp with a 4meg
+ramdisk, but MKS sometimes gets confused when doing an ""ls"" on the c:\temp
+dir, and misses some files in the temp dir.  (This is difficult to 
+reproduce, but it goes away totally when JOIN is not used.)  I think
+this is a Windows problem, rather than MKS's, since it works OK under raw
+DOS.
+
+So, I would suggest that you can use JOIN, but be aware that it may not
+be as robust you would like.
+
+Wouldn't it be real great to ""mount"" network drives (i.e. Z:) under the main
+file tree, rather than having all those darned drive letters? Unfortunately,
+JOIN won't let you do it.  There was talk on the net about a simple patch
+to let JOIN work on network drives, but I don't remember the source.
+
+It's too bad the JOIN command is not better implemented, since it would
+avoid using all those stupid drive letters.  I realize that MessDos was
+meant for casual, even ignorant users, so ""mounting"" all the drives in
+one file tree might be confusing. But, it looks like MS is going to carry
+this over into windows NT (another OS meant for casual, even igorant 
+users -- NOT!).  With all it's old family system baggage, maybe MS needs
+a recovery group so they can get on with life :-(.
+
+--
+Jerome (Jerry) Schneider             Domain: jls@atg.COM 
+Aspen Technology Group               UUCP:   {uunet}!csn!atglab!jls
+PO Box 673, Ft. Collins, CO 80522    Voice:  (303) 484-1488
+
+";2;comp.os.ms-windows.misc
+"From: kmembry@viamar.UUCP (Kirk Membry)
+Subject: roman.bmp (NO!)
+Reply-To: rutgers!viamar!kmembry
+Organization: Private System
+Lines: 12
+
+Please don't post uuencoded bitmaps here.  If you want to do so, put them
+in the alt.binaries.* areas.  These files are very large and may crash
+some users newsfeeds.  It's also a waste of band width.  Also, we all
+know how to convert .gif to .bmp with many programs so it'd really not
+worth posting all of these .bmp files.
+ - thanks
+
+-- 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Kirk Membry                                    ""Our Age is the Age of Industry""
+rutgers!viamar!kmembry                         - Alexander Rodchenko
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+";2;comp.os.ms-windows.misc
+"From: chrisa@hpwarr.hp.com ( Chris Almy)
+Subject: Re: WinFax files in ASCII format?
+Organization: none
+Reply-To: chrisa@hpwarr.hp.com ( Chris )
+Lines: 11
+
+
+
+	WinFax Pro provides you with OCR. It is the OCR from OmniPage.
+	Although it is not as customizable it does the job and is auto
+	matic (if you want) and much cheaper than the same package
+	(Omni Page Professional = $700) sold separatly.
+
+	Last time I check WinFax Pro was only $100 ??
+
+
+
+";2;comp.os.ms-windows.misc
+"From: mccall@mksol.dseg.ti.com (fred j mccall 575-3539)
+Subject: Re: leaking memory resources in 3.1
+Organization: Texas Instruments Inc
+Lines: 65
+
+In <29APR199309371113@bpavms.bpa.arizona.edu> dmittleman@bpavms.bpa.arizona.edu (Daniel Mittleman) writes:
+
+>    This may be an FAQ (if so, please direct me to the known answer) but I
+>    am getting frustrated and looking for help.
+
+>    I am running Win 3.1 with NDW 2.2 on a 486sx with 8 meg of memory and a
+>    6 meg perm swap file and am getting exceedingly frustrated that my
+>    applications are not giving back system resources when I close them.
+
+>    I am aware this is a known problem; what I am looking for are some
+>    suggestions of what I might do to mitigate it.  
+
+>    1. What software is the culprit?  Win 3.1, NDW, my applications?  Are
+>    some modes of Win 3.1 (standard, real, enhanced) better than others at
+>    plugging this leak?
+
+It's the applications that do this.  Unfortunately, even the applets
+that ship with Win31 seem to have this problem (I've seen it in
+Solitaire, for example).  
+
+>    2. Are their system.ini switches i can set to help plug this leak?
+
+None that I know of.  If an application doesn't give back the
+resources, they are lost and gone forever, pending a restart of
+Windows. 
+
+>    3. Do people know of patches or third party software that help with
+>    this?  Seems like increasing or better managing system resources is a
+>    great market for a third party memory company like QEMM.
+
+If the applications don't free up the memory (and a lot of them
+don't), there's bugger all that any other piece of software can do
+about it.
+
+>    4. If I run Progman instead of NDW will the leak subside?  (I was
+>    hoping that NDW 2.2 would have plugged this, but it seems no different
+>    than 2.0 in how it deals with memory and resources.)
+
+No.  This is a problem with the applications, usually.
+
+>    5. When I am writing VB code are there things I can do to make it less
+>    likely my code will eat resources?
+
+There are books written on this one.  In general, just be sure to free
+up everything that you ask for before you exit.  Unfortunately, I
+understand that VB will *internally* lose resources for you, so
+there's no way to avoid this entirely.
+
+>    6. Any other suggestions that I don't know enough to ask for
+>    specifically?
+
+>    Thanks for your help.  As this is a common problem and I have seen only
+>    a little discussion of it on the net there are probably others who
+>    would like to read answers so please publish here rather than sending
+>    me email.
+
+There's little discussion because it's 'inevitable' until MS manages
+to come up with an OS that will do garbage collection or something on
+the resource pool.
+
+-- 
+""Insisting on perfect safety is for people who don't have the balls to live
+ in the real world.""   -- Mary Shafer, NASA Ames Dryden
+------------------------------------------------------------------------------
+Fred.McCall@dseg.ti.com - I don't speak for others and they don't speak for me.
+";2;comp.os.ms-windows.misc
+"From: paller@fedunix.org (Alan Paller)
+Subject: Teacher for Windows NT?
+Organization: FedUNIX - Open Systems Conference Board - Washington D.C.
+Lines: 11
+
+We are searching for one or two instructors for tutorials on advanced
+Windows programming under NT.  If anyone has attended a course that was
+very good, we would really appreciate recommendations.
+
+Please email me directly at paller@fedunix.org; I don't get to see these
+newsgroups often enough.
+
+Thanks in advance for any help.
+
+Alan Paller
+Tutorials Director
+";2;comp.os.ms-windows.misc
+"From: jcmorris@mwunix.mitre.org (Joe Morris)
+Subject: Re: SMARTDRV AND DBLSPACE
+Nntp-Posting-Host: mwunix.mitre.org
+Organization: MITRE Corporation, McLean VA
+Lines: 22
+
+In a recent article rcaldrn@med.miami.edu (Richard Calderon) writes:
+
+>I just received a Gateway 486/33 with Windows and Dos 6.0. I ran it a few times
+>with no apparent problems. I decided to give double Space a try. After 
+>compressing the drive, with no problems, I decided to load windows. It took
+>1 minute 45 Seconds to load after dblspace, 17 seconds before dblspace. I 
+>tinkered a little with the machine and noticed an error message saying 
+>Smartdrive 4.0 cannot work with Dblspace. 
+ ^^^^^^^^^^^^^^
+Not unreasonable, since the SMARTDRV packaged with DOS 6 is version 4.1.
+Make sure that all your drivers (HIMEM, EMM386, SMARTDRV) are being
+executed from the DOS directory.
+
+Loss of the cache provided by SMARTDRV could be your problem; if not,
+I don't know what might cause the startup delay.  My testbed for DBLSPACE
+(which has a *very* minimal amount of data on the disk so that I don't
+eat up too much time as I install and uninstall DBLSPACE) boots in 
+about 20 seconds from the ""Starting MS-DOS"" herald to the end of the
+AUTOEXEC.BAT execution.  I don't have handy a system with a more
+realistic volume of data to time.
+
+Joe Morris / MITRE
+";2;comp.os.ms-windows.misc
+"From: eastwood@sybase.com (David Eastwood)
+Subject: WRK Installation Oddity
+Distribution: usa
+Organization: Sybase, Inc.
+Lines: 11
+
+Last night I tried to reinstall the utilities from the Windows 3.1 Resource
+Kit disk. The setup program appeared to run perfectly normally, but when it
+had finished, there was no Program Group created. Now, I know I've done
+this before successfully, and creating a group myself didn't exactly tax
+me, but I'm curious as to what might be going on. I can only assume that
+something left over from the last time I had it installed is getting in 
+the way, but I can't figure out what. Any clues, anyone? 
+-- 
+
+----------------------------------------------------------------------
+David Eastwood  /  Sybase Inc., Emeryville, CA  /  eastwood@sybase.com
+";2;comp.os.ms-windows.misc
+"From: simun@unity.ncsu.edu (Josip NMI Simunovic)
+Subject: IBM 5272 ColorDisplay for 3270PC ?
+Article-I.D.: ncsu.1993Apr22.212557.27590
+Organization: NCSU
+Lines: 10
+X-Newsreader: TIN [version 1.1 PL8]
+
+
+I have one of these monitors. It appears to function OK, but is unhookable
+to anything standard (CGA,EGA,VGA) - it will plug in but gives fuzzy
+diagonal noise. 
+I also have a graphics board that is apparently a 3270 graphic board
+(double card with 2 8-bit bus connectors, and a 9-pin female connector
+with a picture of monitor). I tried plugging these two into a standard AT
+to no avail. How can one connect these to (the monitor seems to
+be of relatively high quality, so I'm curious)? Any special drivers and/or
+setup needed - I can't locate any jumpers on the card.
+";3;comp.sys.ibm.pc.hardware
+"From: rlb534@ibm-03.nwscc.sea06.navy.mil
+Subject: Re:16550 v. 16550A ???
+Organization: UTexas Mail-to-News Gateway
+Lines: 5
+NNTP-Posting-Host: cs.utexas.edu
+
+> What's the difference between a 16550 UART and a 16550A UART? Thanks!
+
+BUGS!!!!!
+16550 (without the A) would sometimes get extra characters in the FIFO.
+This renders the FIFO useless.  Only get the 16550A.
+";3;comp.sys.ibm.pc.hardware
+"From: lance@hartmann.austin.ibm.com (Lance Hartmann)
+Subject: Re: DX50 vs DX266
+Organization: IBM, Austin
+Lines: 18
+
+In article <33z5zgc@rpi.edu> arnolm2@aix.rpi.edu (Matthew Richard Arnold) writes:
+>
+>Would someone be willing to explain to me the 486DX 50MHz is not more
+>popular than it is?  I would think it would be just as fast, if not 
+>faster than the 486DX 66MHz for certian applications.  Plus, a 50MHz 
+>motherboard would seem better if you had any plans on upgrading the
+>chip in the future.  I must be missing something, since everyone is 
+>buying the DX2 66...  Many adds don't even mention the DX 50.
+>
+
+One of the things going for the DX2-66 (over the 50) is that it's
+clock speed complies with the VESA local bus spec.
+
+Lance Hartmann (lance%hartmann.austin.ibm.com@ibmpa.awdpa.ibm.com)
+               Yes, that IS a '%' (percent sign) in my network address.
+------------------------------------------------------------------------------
+All statements, comments, opinions, etc. herein reflect those of the author
+and shall NOT be misconstrued as those of IBM or anyone else for that matter.
+";3;comp.sys.ibm.pc.hardware
+"From: astrachan@austlcm.sps.mot.com (Paul Astrachan)
+Subject: Feature Connector on VGA cards
+Nntp-Posting-Host: 222.48.248.12
+Reply-To: astrachan@austlcm.sps.mot.com (Paul Astrachan)
+Organization: Motorola MOS Telecom
+Lines: 9
+
+Would someone please post or email the feature connector pin assignments?
+This is sometimes referred to as the aux video connector in some 
+documentation.
+Thanks 
+astrachan@austlcm.sps.mot.com
+
+Paul Astrachan
+Motorola Telecom 
+astrachan@austlcm.sps.mot.com
+";3;comp.sys.ibm.pc.hardware
+"From: djohnson@moose.uvm.edu (Tigger)
+Subject: IP numbers on Ethernet Cards
+Organization: University of Vermont -- Division of EMBA Computer Facility
+Lines: 12
+
+Hi!
+	
+Is it possible through either pin configuration or through software
+programming to change the IP numbers on an ethernet card?
+	
+Thanks in Advance!
+
+-- 
+=-Dave   *Tigger!*
+
+djohnson@moose.uvm.edu        'Tiggers are wonderful things!'
+Dave C Johnson
+";3;comp.sys.ibm.pc.hardware
+"From: hamish@waikato.ac.nz
+Subject: Need info on WD7000
+Organization: University of Waikato, Hamilton, New Zealand
+Lines: 17
+
+
+I need to find how to program the WD7000 FAAST SCSI controller (A 16 bit DMA
+SCSI controller for the PC (ISA bus)). Can somebody point me in the direction
+of some low level docs on the net? Or will I have to get hold of the
+manufacturers? Who did actually make this anyway? Who will have the docs?
+
+TIA.
+
+PS> I don't ant the BIOS docs, I want to know how to attack this sucker from
+the ground level (ie send my own SCSI commands out it from OS/2)
+
+-- 
+Hamish Marson, Computer Services, University of Waikato|
+hamish@waikato.ac.nz.  Fax +64 7 8384066               | Computers are only 
+Disclaimer: Remember. You heard it here first!         |   Human.....
+		  
+Facts are stubborn, but statistics are more pliable.
+";3;comp.sys.ibm.pc.hardware
+"From: ITBIJV@puknet.puk.ac.za (Isak Venter)
+Subject: Bios passwords
+Lines: 13
+Organization: PU vir CHO
+
+I hope that there's somebody out there that can help us.
+
+Some of our students change the AMI bios passwords on a few of our computers 
+and set it for always. What we'd like to know is if there is a way to bypass 
+or remove the password. We have tried switching bios, but to no avail. The 
+battery is soldered to the bord, an all three machines is still under 
+guarentee so if that would have help we can't remove the batteries.
+
+Thanks Isak
+Isak Venter                          ITBIJV@PUKNET.PUK.AC.ZA
+
+:-) Money can't buy happiness, but surely pays for the illusion.
+
+";3;comp.sys.ibm.pc.hardware
+"From: ladasky@netcom.com (John J. Ladasky II)
+Subject: Atari 1040 - Sell or Trade for PC
+Organization: NETCOM On-line Communication Services (408 241-9760 guest)
+Lines: 48
+
+
+        I am considering selling an Atari 1040 and purchasing an IBM compa-
+tible.  I need to know what kind of money or trade I can expect to get for
+the Atari before I bother.  I am about to start graduate school, and that
+means I'm about to be poor!  (There's a price list for used synthesizers on
+rec.music.makers.synth, but no equivalent list for computers...)
+
+This system is tailor-made for a MIDI musician.  Details follow:
+
+  * Atari 1040 ST
+      TOS 1.0
+      1 MB RAM
+      720K floppy drive
+
+  * SupraDrive 20 Mb external SCSI drive, 18 months old
+
+  * 12"" Atari monochrome monitor
+
+  * Generic 2400 baud external modem
+
+  * Software: All software is registered and comes with manuals.
+      Passport's Master Tracks Pro, Version 2.5 (sequencing software)
+      Dr. T's Copyist Professional (scoring software)
+      First Word (word processor - *not* the PD version)
+      Megamax's Laser C, Version 2.0 (programming language)
+      VIP Professional (spreadsheet package - low-tech Lotus clone)
+      Partner ST (desk accessory with integrated calendar, cardfile, etc.)
+      Migraph's Easy Draw (an early, pre-Postscript release)
+      NeoDesk (improved desktop for Atari ST)
+      Universal III (improved file selector for Atari ST)
+      Miscellaneous software (including Uniterm communications software)
+
+
+        I will consider all prices above $900.  I am also willing to
+trade the Atari system for a quality (386 or 486) PC, including lap-tops.
+I own some PC hardware, so a complete system may not be necessary.
+
+-- 
+== John J. Ladasky II (""ii"") ========================= ladasky@netcom.COM ==
+""Great composers do not borrow -	     ""Talking about music is like
+ they steal.""  - John Ladasky	      ~ -     dancing about architecture.""
+(quote stolen from Stravinsky, who    o o     - Elvis Costello?  Laurie
+ stole it from a statement made by     >        Anderson?  Frank Zappa?
+ Pablo Picasso about painting, who    \_/    -------------------------------
+ stole it from...)			     ""Property is theft."" - Groucho
+----------------------------------------------------------------------------
+""A man w/o charity in his heart - what has he to do with music?"" - Confucius
+============================================================================
+";3;comp.sys.ibm.pc.hardware
+"From: kruckenb%peruvian.cs.utah.edu@cs.utah.edu (Joseph Kruckenberg)
+Subject: AT&T DataPort 14.4K Fax/Modem Special!
+Originator: kruckenb@peruvian.cs.utah.edu
+Organization: University of Utah CS Dept
+Lines: 53
+
+FOR SALE:
+
+AT&T Dataport Internal 14.4K Fax/Modem
+
+The modem is an internal AT/(E)ISA 8-bit card (just a little longer
+than a half-card).  It has v.32bis for 14.4Kbps data / 9600 bps fax,
+v.42, v.42bis, and MNP5 for error-correction and data compression, so
+you can get error-free links up to 57,600 bps on a conventional phone
+line.  They will ""fall back"" to any speed (down to 1200bps) and even
+disable compression and error-correction if necessary in order to
+connect with slower and older modems.
+
+It has a 16550 buffered UART for better compatibility with
+multi-tasking operating systems (Windows, OS/2, Unix, etc).
+
+They use a patented technology called Optical Line Interface (OLI)
+which reduces noise generated by the modem to assure the fastest and
+cleanest connection possible.
+
+These modems come with a lifetime warranty and free lifetime tech
+support (and the call is free, too) from AT&T.
+
+They also include the lovely and talented QuickLink II for DOS and the
+NEW QuickLink II for Windows communications and fax software which
+will let you conveniently sent faxes from any DOS or Windows
+application just by printing.  The Windows version will send faxes of
+any font and can include graphics, etc.  The DOS version can fax
+graphics and a limited set of fonts (I believe that there are 5 or so,
+as well as any HP Laser II resident fonts).
+
+I'm asking $210.00 for this modem (plus Utah tax).  This is at or
+below the prices of any other (reputable) manufacturer of an
+equivalent modem (including Zoom, US Robotics, etc).  And, it is
+backed by a company that will never go away.
+
+This price will include delivery if you live within 20 miles of
+downtown SLC.  I can also arrange shipping, or you can stop by my home
+to pick it up.  (If you're concerned about installing an internal
+modem, let me know and we can discuss an arrangement for including
+installation.)
+
+If you're interested, please let me know.  This is an excellent modem
+at an excellent price (they normally list for ~$500 and retail for
+about ~$300).  I installed one of these last week and it is very nice.
+
+If you have questions about this, AT&T has an info number at 
+(800) 554-4996, or you can email me and I will attemp to answer them.
+
+The modem will go to the highest bidder I get within the next week.
+
+Thanks.  
+Pete
+
+";3;comp.sys.ibm.pc.hardware
+"From: ab670@Freenet.carleton.ca (Micah Lax)
+Subject: HELP: BIOS upgrade on Compaq 286 Deskpro
+Reply-To: ab670@Freenet.carleton.ca (Micah Lax)
+Organization: The National Capital Freenet
+Lines: 27
+
+
+Howdy,
+
+I recently upgraded the original BIOS in a Compaq Deskpro 286/12
+with a Phoenix replacement BIOS, in order to support an IDE hard drive,
+and a high-density 3.5"" floppy.
+
+I assumed that this would be a plug-and-play procedure, but I have
+encountered a problem that Phoenix and Compaq are unwilling to admit
+responsibilty for, and I was wondering if anyone else had seen it.
+
+Everything is hunky-dory except the 3.5"" floppy, which will read, but NOT
+WRITE diskettes.  Any write attempt merely corrupts both FATs.
+
+I have tried everything I can think of.
+
+Any takers?
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Micah H. Lax                             <ab670@freenet.carleton.ca>
+                                         <micah@bnr.ca> on INTERNET
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+";3;comp.sys.ibm.pc.hardware
+"From: chris.crayton@ozonehole.com (Chris Crayton) 
+Subject: Where can i buy a bios?
+Distribution: world
+Organization: Ozone Online Operations, Inc. - New Orleans, LA
+Reply-To: chris.crayton@ozonehole.com (Chris Crayton) 
+Lines: 29
+
+*** On 04-21-93  04:51, Ikos had the unmitigated gall to say this:
+
+ Ik> I'm in the market to upgrade my BIOS to a Phoenix 1.10 (got a new hard
+ Ik> disk, discovered my BIOS doesn't have a ""type 47"") and I would like
+ Ik> know where I can purchase one of these things.
+
+Call Phoenix.  They can put you on line with replacement BIOS chips.  I had
+to do this when I upgraded a Emerson 386/20 to an IDE drive.
+
+Also, if you are installing an IDE drive, and there is a BIOS setting that
+has a total volume the same as the IDE drive's volume, try using it.  The
+IDE drive can usually respond to a variety of different geometries, as long
+as the setting that you use is equal to or smaller than the drive's actual
+size.  The controller will do the necessary translation automatically, in
+most cases.
+
+WARNING!!!  Do not use a BIOS setting that is even one byte larger than the
+actual size of the drive!  A smaller setting will not harm the drive, but
+you will be sorry if you go even one byte over.  Drive damage will not
+result, but headaches will!
+
+... Backup not found: (A)bort (R)etry (P)anic
+--- Blue Wave/QWK v2.10
+                                     
+----
+The Ozone Hole BBS * A Private Bulletin Board Service * (504)891-3142
+3 Full Service Nodes * USRobotics 16.8K bps * 10 Gigs * 100,000 Files
+SKYDIVE New Orleans! * RIME Network Mail HUB * 500+ Usenet Newsgroups
+Please route all questions or inquiries to:  postmaster@ozonehole.com
+";3;comp.sys.ibm.pc.hardware
+"From: darryl@dogmatix.inmos.co.uk (Darryl Cross)
+Subject: Archive VP402 and QIC-02
+Reply-To: darryl@dogmatix.inmos.co.uk (Darryl Cross)
+Organization: INMOS IQ Systems Group, Bristol, UK
+Lines: 15
+
+hi,
+  just a quick question reguarding pc tape backup. I own a 386 dos box
+and have an Archive VP402 interface card connected to a QIC-02 tape
+drive. Now the simple question is, does anybody in netland know were I
+can get some software for msdos (ver 5.0) to run this setup, freeware
+or shareware preferred .
+
+Thanks in advance,
+                   Darryl
+
+sorry for the repost but I'm still getting to grips with Pnews.
+Darryl Cross, INMOS Ltd,     | mail(uk): darryl@inmos.co.uk
+Bristol, UK.                 |           or ukc!inmos!darryl
+TEL +44 454 616616 ex 618    |     (us): uunet!inmos.com!darryl
+FAX +44 454 617910           | Internet: darryl@inmos.com
+";3;comp.sys.ibm.pc.hardware
+"From: ajp39368@uxa.cso.uiuc.edu (James_Bond)
+Subject: Seagate HD jumper schematics
+Summary: Seagate ST3283A HD and ST3144A jumper schematics needed
+Keywords: seagate jumper schematics
+Organization: University of Illinois at Urbana
+Lines: 15
+
+
+I am trying to setup two Seagate Tech. hard drives as
+master and slave in the same system...
+what i need to do such is the jumper schematics of the
+two hard drives that i have...
+my two Seagate HD:	ST3144A, 124MB
+			ST3283A, 233MB 
+
+I need the jumpter setting schematics for these two Harddrives...
+thanx for you help in advance...
+
+--AJ.
+ajp39368@uxa.cso.uiuc.edu
+An ideal wife is the woman who has an ideal husband!
+
+";3;comp.sys.ibm.pc.hardware
+"From: glen@tegra.com (Glen Osterhout)
+Subject: Re: Monitors - Nanao?
+Organization: Tegra-Varityper, Inc. Billerica, MA
+Lines: 14
+
+In article <C5wKx1.Frv@news.iastate.edu> schauf@iastate.edu (Brian J Schaufenbuel) writes:
+>What tube does the Viewsonic 17 use?  Does is support 1600x1280?  I've been
+>looking a a Philips 1762DT which uses a Sony Trinitron tube, has digital
+>controls, supports up to 1280x1024NI, and has .25mm dot pitch - It can be
+>found for under $1000.
+
+Do you mean the ViewSonic 7?  It uses a Matsushita tube.  The Computer 
+Shopper review faults it for having below average sharpness and for
+lacking some controls (pincushioning, degaussing, convergence and color).
+It was the lowest priced monitor in the test,  and did have good center 
+to edge focus.
+
+
+
+";3;comp.sys.ibm.pc.hardware
+"From: scott@hpcvccl.cv.hp.com (Scott Linn)
+Subject: Re: AMD i486 clones: Now legal in US?!?!?!
+Nntp-Posting-Host: hpcvccl.cv.hp.com
+Organization: Hewlett-Packard Company, Corvallis, Oregon USA
+Distribution: na
+Lines: 16
+
+wyman@rtsg.mot.com (Mark S. Wyman) writes:
+: poe@wharton.upenn.edu writes:
+: 
+: >A friend of mine called me on the phone and told me he was wathcing CNN
+: >and saw a report that the ruling prohibiting AMD from selling their i486
+: >clones has been thrown out, making it legal for AMD to ship in the US.
+: 
+: Yep, this was on the news.  Great news for consumers.  Bad news
+: for Intel.  
+
+Their stock dropped quite a chunk with the announcement.
+
+--
+
+Scott Linn
+scott@hpcvccl.cv.hp.com
+";3;comp.sys.ibm.pc.hardware
+"From: srg055@cck.coventry.ac.uk (Crowley)
+Subject: Re: 3.5 floppy only reads what IT wrote
+Nntp-Posting-Host: cc_sysk
+Organization: Coventry University
+Lines: 27
+
+In article <1434@netxcom.netx.com> pdressne@netxcom.netx.com (Peter Dressner) writes:
+>I have a Gateway with a 3.5 floppy. The drive only reads files it
+>wrote to the floppy. Floppies that have been formatted and 
+>contain files from other machines are unreadable. Also, 3.5 floppies
+>that were written by this defective floppy drive a long time ago are
+>also unreadable.
+>
+>This sounds like a head alignment problem. How does one go about
+>fixing it? Are there alignment screws that you can adjust?
+>
+>Thanks in advance for your responses.
+>
+>Peter
+
+A friend of mine had the same problem, it turned out that his floppy was
+set up as a 5 1/4 1.2Mb drive instead of 3.5 1.44Mb.....
+
+might help...
+
+
+Matt.
+
+-- 
+---------------------------------------------------------------------------
+         Crowley          |'Just remember I'll have known that, deep down 
+srg055@uk.ac.coventry.cck |inside, you were just enough of a bastard to be     
+__________________________ worth liking.'__________________________________
+";3;comp.sys.ibm.pc.hardware
+"From: jbvb@vax.ftp.com  (James B. VanBokkelen)
+Subject: Re: Jumper settings for Ungermann-Bass PCNIC Ethernet card
+Nntp-Software: PC/TCP NNTP
+Keywords: UB PCNIC
+Lines: 14        
+Nntp-Posting-Host: whipped-cream.ftp.com
+Reply-To: jbvb@ftp.com
+Organization: FTP Software, Inc., North Andover, Massachusetts
+Distribution: na
+
+In article <1993Apr21.215204.18373@ntg.com> dplatt@ntg.com (Dave Platt) writes:
+    The IRQ and interface-select jumpers are pretty straightforward, but I
+    don't grok the settings of W10-W18 (also labelled A15 through A18).
+    Could somebody tell me which settings of these four jumpers correspond
+    to what I/O addresses?
+    
+The U-B PCNIC (also OEMed by IBM for a while) is the only Ethernet card I
+know of that doesn't use I/O addresses.  It only has interrupts and shared
+memory.  The jumpers you see control bits 15-18 in the base address of the
+shared memory.  I can't recall which is 1 and which 0, but that's easy
+to determine with DEBUG.
+
+James B. VanBokkelen		2 High St., North Andover, MA  01845
+FTP Software Inc.		voice: (508) 685-4000  fax: (508) 794-4488
+
+";3;comp.sys.ibm.pc.hardware
+"From: wbarnes@sura.net (Bill Barnes)
+Subject: Re: (Q) SCSI&IDE (i.e. 2 or more hard drives)
+Organization: SURAnet, College Park, MD, USA, NA, Earth, Milky Way
+Lines: 27
+NNTP-Posting-Host: azathoth.sura.net
+
+In article <1993Apr19.220704.18518@news.cs.brandeis.edu> luoma@binah.cc.brandeis.
+edu writes:
+>Has anyone (successfully) put both SCSI and IDE hard drives
+>on the same system?
+
+I would like to know as well, since I just bought a 200MB Seagate IDE
+drive and want to add it to my computer (a four-year-old Gateway
+386/20), which currently has an 80MB Seagate SCSI drive.  The SCSI
+controller is such that the docs told me not to specify it in the CMOS
+setup, i.e. both hard drive settings are listed as ""Not installed,""
+and apparently the SCSI controller works its wonders.  I wondering if
+this is a problem.  Also, I remember how, when I helped my cousin
+install his second IDE drive, we had to define a master/slave
+relationship for them; do I need to do something similar here?
+
+>I am particularly interested in having the SCSI as the _boot_ drive.
+
+Same here.
+
+Any help would be appreciated, since I intend to install this drive
+ASAP; I'd like to know what to do (and what not to do) before I start.
+Thanks!
+-- 
+-----------------------
+William Barnes		SURAnet Operations
+wbarnes@sura.net	(301) 982-4600 voice  (301) 982-4605 fax
+Disclaimer:  I don't speak for SURAnet and they don't speak for me.
+";3;comp.sys.ibm.pc.hardware
+"From: 166728647@vill.edu (DHARMESH CHOVATIA)
+Subject: HELP: Promplem with Panasonic kx-1124 printer
+Organization: Villanova University
+Lines: 17
+News-Software: VAX/VMS VNEWS 1.4-b1
+
+folks,
+
+I have a Panasonic kx-1124 (just inherited with no documentation) which is 
+giving me a problem that i cant resolve.
+
+ The paper out light refuses to go out . It starts to blink when ever i
+turn the power on which 2 beeps. It does allow be to go on line with green
+light lit, simultanously the red paper out light also remains lit -but is
+does not blink.
+
+ Please do not give any references to manuals , as i dont have any.
+
+Thanking you all very much in advance.
+
+Sincerely
+
+Dharmesh
+";3;comp.sys.ibm.pc.hardware
+"From: lonewolf@muse.Corp.Sun.COM (Peter Pak)
+Subject: Re: 386 Motherboard advice needed
+Organization: Sun Microsystems
+Lines: 12
+Distribution: world
+Reply-To: lonewolf@muse.Corp.Sun.COM
+NNTP-Posting-Host: muse.corp.sun.com
+
+Maybe I should have been clearer.  I have a Intel 386DX/25 that I would
+like to use to put together a system however all the motherboards that
+the local vendors are now selling are running either at 33 or 40 MHz.  I
+guess I can cross my fingers and hope the CPU runs at that speed. ;^)
+
+I think I'll take Mark's advice and see if any of the boards have
+a socketed oscillator and head down to the local electronics store...
+
+Thanks for the info...
+
+=B^)
+
+";3;comp.sys.ibm.pc.hardware
+"From: eabu500@orion.oac.uci.edu (Michael)
+Subject: Re: Monitors - should they be kept on 24 hours a day???
+Nntp-Posting-Host: dialin33611.slip.nts.uci.edu
+X-UserAgent: Nuntius v1.1.1d17
+Organization: UC Irvine
+Lines: 31
+X-XXMessage-ID: <A7FFA130BA038ECA@dialin33611.slip.nts.uci.edu>
+X-XXDate: Sun, 25 Apr 93 18:00:16 GMT
+
+In article <cassidy.72.0@elan.rowan.edu> Kyle Cassidy,
+cassidy@elan.rowan.edu writes:
+>this is a bad idea. my machine is on 24 hours a day, but it's
+actually 
+>_doing_ things 24 hours a day. i use it as an all purpose alarm
+clock, 
+>scheduler, i've got routines that run in the middle of the night,
+phone 
+>calls it makes during the day when i'm out. if your machine is _on_
+24 hours 
+>a day, then you can count on it to be _working_ 24 hours a day. i
+could call 
+>it from work and download a file that i might need, i could call it
+from 
+>work and have it turn the lights on if i'm going to be late (oops,
+more 
+>wasted electricity -- but conversely, i could have it turn the
+lights 
+>_off_). heck, i suppose i could even connect the microwave and have
+dinner 
+>ready when i get there.
+>
+>oh well. nevermind. i'm just babbling.
+
+All of those things that you've mention can still be accomplished
+when the
+machine is ""power down.""  When the previous poster said ""power
+down"", it 
+doesn't mean turning off the machine, it just means that the machine
+is
+in an energy conserving mode that sucks up least electricity.
+";4;comp.sys.mac.hardware
+"From: pmontan@nswc-wo.navy.mil (Paul Montanaro)
+Subject: Re: cd300 question
+Organization: NSWC
+Lines: 26
+
+In article <h01sav.dsyibm.desy.de-230493200218@michael.desy.de>,
+h01sav.dsyibm.desy.de (Michael M. Savitski) wrote:
+> 
+> Hi, there!
+> I have a MAC LC and consider buying CD300. I've been told,
+> however, that:
+> 1. The double speed of CD300 is achievable only on machines
+>    with SCSI-2.
+> 2. The double speed is a prerequisite for PhotoCD multisession
+>    capability, which I need.
+> 3. Which means I seem to gain nothing compared with, say CD150.
+> 
+> Any comments?
+> Thanx.
+> 
+
+  Your source is wrong.  The double speed CD300 is still slow compared to a
+typical hard disk.  The LC can easily handle the SCSI transfer rate of the
+CD300.  None of the current Macs, even the Quadras, support SCSI-2 unless
+you get a SCSI-2 Nubus Card.
+
+  You don't have to have double speed to use PhotoCD.  It's just faster
+reading images off of a disk.  I think that the CD150 can handle PhotoCD,
+but only single session.  The CD300 can do multisession PhotoCD.
+
+Paul
+";4;comp.sys.mac.hardware
+"From: squish@endor.uucp (Shishin Yamada)
+Subject: Re: Sony reliability (was Re: Musings on PB100 durability)
+Organization: Aiken Computation Lab, Harvard University
+Lines: 46
+
+In article <1993Apr15.175427.15489@waikato.ac.nz> ldo@waikato.ac.nz (Lawrence D'Oliveiro, Waikato University) writes:
+>In article <1993Apr13.165114.1097@csus.edu>, altheimm@nextnet.csus.edu (Murray Altheim) writes:
+>
+>> That was my point. :-) Sony did manufacture the PowerBook 100 under license
+>> from Apple. AND IT ACTUALLY WORKS!
+
+Yup, I bought the darn thing cause it was sturdy. I carry it around in
+an unpadded (unless you consider all the papers and files and folders)
+bookbag (shoulder strap little job from Eddie Bauer). I've travelled
+cross country several times with Walkman, DiscMan and tapes, books and
+computer all piled in their. My PB100 works happily, and I'm typing on
+it right now... It has a Global Village Teleport 9600 V.32 internal
+send/receive fax-modem, and I just love it.
+
+Unfortunately, I have seen a new Duo 230 that a friend bought as a
+primary computer (I have a Mac IIsi and SE30 as primary home
+computers, and Quadra and IIci at work in the lab). And while amazed
+at the lightness of it, I was kinda shocked at the flimsiness of the
+screen. I'm sure it'd break real easy....
+>>
+>> (Sorry, but other than my Trinitron, everything else I've ever bought from
+>> Sony has failed. Why did I keep trying? Because I'm 'tupid.)
+>
+>Aw, c'mon. I've got a Sony VCR, a Sony TV (both must be over two years old by
+>now), a Sony camcorder (five months old?), and of course an Apple 13"" RGB
+>monitor with a Sony tube that I'm never going to part with. And the CD-300i
+>drive in my month-old Centris 650 is in fact a Sony.
+>
+>Maybe it's a question of personal compatibility. Maybe your body puts out the
+>wrong polarity of static electricity, or something... :-)
+>
+Geez, we are a Sony familly. Our neighbor works for Zeinth and hates
+it (always asks why we didn't buy Zeinth products). Nice guy
+nevertheless. We still have two working Sony Color Trinitrons from
+1972 and 1974. Older one is on it's second picture tube, but both
+work. Now they're relegated to the old 8-bit atari computer and atari
+2600 game machinces, as well as our not-that-old younger sister's
+Nintendo game machine. Sony doesn't make TV's like they used to
+though, the newer Mexican assembly-line TV's are not that reliable or
+sharp anymore... Dad also just got a 35"" direct-view Sony (god, the
+thing weighs a ton!). :)  Still, where would we be without Trinitrons,
+CD players, or the veritable Walkman????
+
+-shishin ""squish"" yamada
+squish@endor.harvard.edu 
+
+";4;comp.sys.mac.hardware
+"From: roy@mchip00.med.nyu.edu (Roy Smith)
+Subject: Re: Monitors - should they be kept on 24 hours a day???
+Organization: New York University, School of Medicine
+Lines: 29
+NNTP-Posting-Host: mchip00.med.nyu.edu
+
+stubbs@hawk.cs.ukans.edu (Jerry Stubbs) writes:
+> The electricy consumption will go down if you turn them off overnight,
+> along with heat.
+
+	I wonder how hard it would be (i.e. what it would add to the cost)
+to design desktop machines with a power saver feature built in which would
+reduce power consumption automatically if the machine is idle for more than
+some amount of time.  This is pretty standard in portable machines, and the
+same kinds of tricks could be played; spinning down disks, turning off
+screens, reducing clock speed, etc.  The advantage of this over just turning
+the thing off would be 1) you don't have to remember to do anything and 2)
+the machine is still available over the network.
+
+	The tricky part might be in defining what constitutes inactivity.
+Certainly, you don't want to wake up from sleep mode just because somebody
+pinged you, but you do want to wake up (at least the CPU) if somebody
+logs in via a telnet connection.
+
+	I wouldn't worry too much about wasting electricity in the winter
+months; that energy is just getting turned into heat.  It may not be as
+efficient a way to heat a building as the central heating plant, but it's
+not too bad.  In the summer though, it's a disaster.  Not only are you
+wasting that power, but you're probably also running the air conditioning to
+get rid of the waste heat.
+-- 
+Roy Smith <roy@nyu.edu>
+Hippocrates Project, Department of Microbiology, Coles 202
+NYU School of Medicine, 550 First Avenue, New York, NY 10016
+""This never happened to Bart Simpson.""
+";4;comp.sys.mac.hardware
+"From: yolo2@utkvx.utk.edu (Lo, Yunnhon)
+Subject: harddrive
+News-Software: VAX/VMS VNEWS 1.41    
+Organization: University of Tennessee Computing Center
+Lines: 11
+
+Does anyone out there know how to add an additional internal hard-drive
+to a mac IIsi. NOT to replace the already existing hardrive! I was
+think of hooking to internal drive together or any other ways to add
+internal harddrive beside replacement. I just don't wanadd an
+external harddrive. I'm open to any suggestions..please response to
+the address below. thanks
+
+internet:   yolo2@utkvx.utk.edu
+bitnet:     yolo@utkvx
+
+
+";4;comp.sys.mac.hardware
+"From: Kevin Hester <kevinh@apple.com>
+Subject: Re: IIf & IIg slot?
+X-Useragent: Nuntius v1.1
+Organization: Apple Computer, Inc.
+Lines: 13
+
+In article <1993Apr23.021150.1065@ccu1.aukuni.ac.nz> Mark Perry,
+markp@ccu1.aukuni.ac.nz writes:
+>There seems to be a P
+>PDS slot in the above printers. What is it ?
+
+It is a factory testing slot.  The test rig connects to the connector and
+verifies proper board operation.
+
+Kevin
+---------------------+--------------------------------------------------+
+S. Kevin Hester      | Disclaimer: Nothing I say has anything to do     |
+kevinh@apple.com     | with Apple Computer.  The red zone is for        |
+Portable Beer Brewer | loading and unloading of passenger vehicles only.|
+";4;comp.sys.mac.hardware
+"From: afung@athena.mit.edu (Archon Fung)
+Subject: PowerPC NuBUS rumors?
+Organization: Massachusetts Institute of Technology
+Lines: 9
+Distribution: world
+NNTP-Posting-Host: thobbes.mit.edu
+
+I read in MacWeek that some developers are getting NuBUS cards from apple
+with pre-release PowerPC chips on them.  Does this mean that when the
+chip is released, those of us with old apples will be able to take
+advantage of the PowerPC RISC technology just by inserting a card?
+
+I don't know anything about hardware, so can someone tell me how much of
+a cludge this would be?
+
+Archon
+";4;comp.sys.mac.hardware
+"Distribution: world
+From: elenay_creations@tcs.las-vegas.nv.us (Anthony D. Saxton)
+Organization: Cyber Sanctum BBS 702.435.2179
+Subject: Re: Apple 8*24 GC Video Card
+Lines: 18
+
+> A friend of mine recently acquired an 8!24 GC card for his IIsi
+> and was wondering why it always starts up in black and white.
+> I know there have been numerous reports about the worth of
+> the GC, but I was wondering if anyone could elaborate a little
+> more on the subject.  Any replies encouraged.  Thanks in ad-
+> vance.
+>
+> 						Joe Kasanic
+>
+
+I've had similar problems w/ other board types, and the problem is NOT a
+result of the 8/24GC board! Try Zapping the PRAM by holding down
+""Command-Option-P-R"" durring startup! You will have to reset everything to
+your previous preferences (The Date & Time remain intact!), but the Video
+Board will start remembering it's previous settings!
+
+Anthony D. Saxton
+Elenay Creations
+";4;comp.sys.mac.hardware
+"From: patlin_s@cubldr.colorado.edu
+Subject: re: Tempest and Cyclone info NEEDED
+Lines: 10
+Nntp-Posting-Host: gold.colorado.edu
+Organization: University of Colorado, Boulder
+Lines: 10
+
+In article <13651@news.duke.edu>, connie@acpub.duke.edu (Connie) writes:
+> The two models will talk as well as listen. A new system facility
+> called the Speech Manager will convert text strings sent by
+> applications to phonemes and then pass them to a speech synthesizer.
+
+
+Now to make it perfect apple ought to run right out and license
+the voice of a certain Mrs. Roddenberry for the speech synthesizer....
+
+Scott
+";4;comp.sys.mac.hardware
+"From: chyang@engin.umich.edu (Chung Hsiung Yang)
+Subject: Re: Monitors - should they be kept on 24 hours a day???
+Organization: University of Michigan Engineering, Ann Arbor
+Lines: 18
+Distribution: world
+NNTP-Posting-Host: anaphora.engin.umich.edu
+
+In article <21APR199323231675@utkvx.utk.edu> ljones@utkvx.utk.edu (Leslie Jones) writes:
+>
+>A CNN factiod in the last few months stated that 40% of all the computers
+>in the U.S. are left on 24 hours a day, 7 days a week.  I don't recall
+>CNN's source.
+>
+
+	Yeah, but they probably included industries and educational institutions
+that uses mostly work stations (SUNs, DEC, IBM RS600... etc etc)  Which turns
+monitor off if left untouched for 5 min.  
+
+- Chung Yang
+
+
+>Leslie Jones
+>ljones@utkvx.utk.edu, who turns off his monitor when he's not using it.
+
+
+";4;comp.sys.mac.hardware
+"From: paryavi@matt.ksu.ksu.edu (Saiid Paryavi)
+Subject: Re: Centris 610 flaky?
+Organization: Kansas State University
+Lines: 29
+NNTP-Posting-Host: matt.ksu.ksu.edu
+
+tthiel@cs.uiuc.edu (Terry Thiel) writes:
+
+>scott@cs.uiuc.edu (Jay Scott) writes:
+>>A rep at the dealer (actually it's a university order center, so
+>>they don't have any immediate financial interest), told me that
+>>they have been having lots of problems with their Centris 610.
+>>He didn't go into details, but mentioned problems with the
+>>floppy drive and intermittent problems with printing files.
+>>It sounded to me like they were having both hardware problems
+>>and software compatibility problems with the machine.
+>>He's not recommending the Centris 610 to anybody; he says to
+>>consider a Centris 650 or a IIvx. (Why he would recommend a
+>>IIvx over an LCIII I don't know, but that's what he said.)
+>>So, what does the net think? Did the dealer just get one flaky
+>>machine, or did Apple send the C610 out the door too early?
+>>Is your C610 working just great, or is it buggy too?
+
+My Centris 610 is working perfectly.  There is one problem that I have
+noticed.  FastBack II backup utility does not work!!!  The strange thing
+is that it works with my friend's 610 most of the time, however, it never
+works with my machine.  I assume it is some sort of software problem and
+not hardware related.
+
+
+
+-- 
+*************************************************************************
+Saiid Paryavi 		paryavi@matt.ksu.ksu.edu 	saiid@cis.ksu.edu
+*************************************************************************
+";4;comp.sys.mac.hardware
+"From: rherzog@rc1.vub.ac.be (Herzog Robert (DBM))
+Subject: Moniterm VCX on mac? Which card to use?
+Distribution: world
+Organization: Brussels Free Universities (VUB/ULB), Belgium
+Lines: 6
+Keywords: moniterm VCX
+
+I have a nice VXC Moniterm 19 in B/W monitor, formerly used on an ATARI ST.
+I think such monitors are / have been used on macs.
+Can someone tell me what mac can use it, what card I should get to use it, etc..
+This monitor also has a label on the front saying Viking 2/90, and has a DB9
+connector.
+
+";4;comp.sys.mac.hardware
+"From: kdsu_ltd@uhura.cc.rochester.edu (Kenneth Suzan)
+Subject: Need Modem & Software Recommendation
+Keywords: Modem, Software, Help
+Nntp-Posting-Host: uhura.cc.rochester.edu
+Organization: University of Rochester - Rochester, New York
+Lines: 15
+
+I am planning on buying a modem and related software. What are some good 
+products out there that won't cost me a lot of money but will still do 
+the job? 
+
+Any help will be appreciated.  I am looking for something in the 2400 baud 
+area. 
+
+Kenneth
+                 
+
+-- 
+------------------------------------------------------------------------------
+ Kenneth David Suzan     * Internet: kdsu_ltd@uhura.cc.rochester.edu    
+ C.P.U. Box 272571       * WRUR 88.5 FM ROCHESTER, NY/ 4-CAST WEATHERLINE 
+ University  of Rochester* ROCK from the REAGAN YEARS 3-5 PM F R I D A Y S 
+";4;comp.sys.mac.hardware
+"From: guykuo@carson.u.washington.edu (Guy Kuo)
+Subject: Re: Centris 610 clock adjustment?
+Article-I.D.: shelley.1r7rc4INNmu2
+Distribution: usa
+Organization: University of Washington
+Lines: 2
+NNTP-Posting-Host: carson.u.washington.edu
+
+The article was probably referring to changing the clock oscillator in a manner similar to that done on Quadra 700's and IIsi's. I haven't read a report of this actually being done on a Centris 610 but supposedly this also works on Q900,
+Q950 and centris 650 machines.
+";4;comp.sys.mac.hardware
+"From: ferch@ucs.ubc.ca (Les Ferch)
+Subject: Re: Where to get power cord to plug Non-Apple monitor into Quadra power supply?
+Organization: The University of British Columbia
+Lines: 20
+NNTP-Posting-Host: swiss.ucs.ubc.ca
+
+In <1r7t6fINNq4c@senator-bedfellow.MIT.EDU> thewho@athena.mit.edu (Derek A Fong) writes:
+
+>Is there an extension cord type cable I can buy which allows me to plug
+>my existing power cord into and then plug this ""extension cable"" into my
+>Quadra? 
+
+There are two approaches:
+
+1. If your power cord is the kind that detaches from the back of the
+monitor (most common) you can get a *replacement* power cord that will go
+from the monitor to the back of the computer.
+
+2. You can get an adpater that connects to the plug end of the existing
+power cord and provides the proper end that plugs into the back of the
+computer.
+
+Both cost about the same (aprox. $5) and are available from many computer
+stores (clone dealers are usually better at having these things and at
+good prices). Power cords are standard, so you don't have to go looking
+for some special thing at a Mac store.
+";4;comp.sys.mac.hardware
+"From: hades@coos.dartmouth.edu (Brian V. Hughes)
+Subject: Re: Quadra 900/950
+Reply-To: hades@Dartmouth.Edu
+Organization: Dartmouth College, Hanover, NH
+Disclaimer: Personally, I really don't care who you think I speak for.
+Moderator: Rec.Arts.Comics.Info
+Lines: 12
+
+armani@edgeway.wimsey.bc.ca (Anand Mani) writes:
+
+>Besides the faster processor, the 950 has SCSI 2, and as far as I know,
+>faster I/O due to separate processors handling those functions.
+
+    Mostly. The Q950 does have a SCSI2 controller chip as it's SCSI
+chip, but it does not have the chips to use the Wide or Fast SCSI-2
+modes and therefore doesn't offer much more in the way of SCSI
+performance over the Q900. It does, howrever, have a faster I/O
+controller than the Q900; this is where the real speed boost comes from.
+
+-Hades
+";4;comp.sys.mac.hardware
+"From: ccw@lancelot.NoSubdomain.NoDomain (Christopher Wood)
+Subject: Re: What was the APPLE LI
+Organization: Bellcore, Livingston, NJ
+Lines: 14
+
+In article <11259.75.uupcb@hal9k.ann-arbor.mi.us>, barry.davis@hal9k.ann-arbor.mi.us (Barry Davis)  writes:
+
+|> The Lisa was originally introduced in 1980 or '81, I forget now, and
+|> sold for $9995 with 2 400k floppy drives and 1Mb memory. It didn't do
+|> too well. <grin>
+
+Close, but no cigar.  The LISA was introduced in January, 1983 (at the
+same time as the Apple //e).  I'll have to check to see if the Hard
+Drive came bundled for the $10K.  The floppy drives were 5.25""
+initially (the infamous ""twiggy"" drives)
+
+-- 
+Chris Wood     Bellcore   ccw@ctt.bellcore.com
+
+";4;comp.sys.mac.hardware
+"From: thewho@athena.mit.edu (Derek A Fong)
+Subject: Where to get power cord to plug Non-Apple monitor into Quadra power supply?
+Organization: Massachusetts Institute of Technology
+Lines: 23
+NNTP-Posting-Host: alfredo.mit.edu
+
+I have a Sony 1304s whch I would like to hook up so that I get its 
+power though my Quadra 800's power supply. ie, if I had an apple monitor,
+I could plug the monitor directly into the computer so that when I hit
+the power button the keyboard, both the monitor and computer go on, and
+when I shut down, both go off.  Is there an extension cord type cable
+I can buy which allows me to plug my existing power cord into and then plug
+this ""extension cable"" into my Quadra?
+
+Any thoughts and comments would be appreciated,
+
+Thanks in advance,
+Derek
+
+******************************************************************************
+  DEREK FONG                           *   EMAIL: thewho@plume.mit.edu
+  Dept. of Physical Oceanography       *          thewho@darla.whoi.edu
+------------------------------------------------------------------------------
+Bldg 54-1511A                          * Clark Laboratory 317
+Massachusetts Institute of Technology  * Woods Hole Oceanographic Institution
+Cambridge, MA 02139                    * Woods Hole, MA 02543
+(617) 253-2922                         * (508) 457-2000 x2814
+*******************************************************************************
+
+";4;comp.sys.mac.hardware
+"From: hades@coos.dartmouth.edu (Brian V. Hughes)
+Subject: Re: Monitors - should they be kept on 24 hours a day???
+Reply-To: hades@Dartmouth.Edu
+Organization: Dartmouth College, Hanover, NH
+Disclaimer: Personally, I really don't care who you think I speak for.
+Moderator: Rec.Arts.Comics.Info
+Lines: 11
+
+roy@mchip00.med.nyu.edu (Roy Smith) writes:
+
+>	I wonder how hard it would be (i.e. what it would add to the cost)
+>to design desktop machines with a power saver feature built in which would
+>reduce power consumption automatically if the machine is idle for more than
+>some amount of time.
+
+    About as hard as it was to design the Color Classic, since it's
+monitor behaves in just this manner.
+
+-Hades
+";4;comp.sys.mac.hardware
+"From: paryavi@matt.ksu.ksu.edu (Saiid Paryavi)
+Subject: Carrying case for Centris 610 ?
+Organization: Kansas State University
+Lines: 8
+Distribution: world
+NNTP-Posting-Host: matt.ksu.ksu.edu
+
+Does anyone know if there is a carrying case for the Centris 610?  
+
+Thanks for any info.
+
+-- 
+*************************************************************************
+Saiid Paryavi 		paryavi@matt.ksu.ksu.edu 	saiid@cis.ksu.edu
+*************************************************************************
+";4;comp.sys.mac.hardware
+"From: gtkurdy@access.digex.net (GodTom)
+Subject: DROP
+Organization: TommyVision Corporation, Washington, DC USA
+Lines: 1
+NNTP-Posting-Host: access.digex.net
+
+                                                                                                                                
+";5;comp.windows.x
+"From: manli@cs.uh.edu (Man Lung Li)
+Subject: malloc problem
+Organization: Computer Science dept.,  Univ. of Houston (Main Campus)
+Lines: 16
+Distribution: world
+NNTP-Posting-Host: rodin.cs.uh.edu
+
+How do you solve the problem when the message ""Cannot perform malloc""
+shows for XtCreateManagedWidget call?
+
+I have the application written in X11R5 running on DECstation using
+Athena widgets.  As soon as I added codes to do Remote Procedure Call,
+the program refused to work.  I also have my program working using
+just Xlib calls with RPC.  My executable code is about 1.4M and I don't
+have any idea how much memory is the DECstation 3100/5100.
+
+Any help will be appreciated.  Thanks.
+
+-- 
+----------------------------------------------------------------------
+Man L. Li (manli@cs.uh.edu)
+Dept. of Computer Science
+Univ. of Houston, Houston,TX 77204-3475
+";5;comp.windows.x
+"From: sxs@extol.Convergent.Com (S. Sridhar)
+Subject: Re: tvtwm icon manager
+Organization: Unisys Open Systems Group, San Jose
+Lines: 22
+
+In article <13960@risky.Convergent.COM>, sxs@extol.Convergent.Com (S. Sridhar) writes:
+|> Keywords: tvtwm icon manager
+|> 
+|> Need help on resource bindings for tvtwm.  Here's what I'd like to
+|> see the icon manager do.
+|> 
+|> Say I iconify a window and this shows up on the icon list.  Now when I 
+|> pan into another section of the virtual desktop and try to deiconify
+|> the window that I iconed (sp ?)  earlier, I'd like this window to
+|> deiconify in the current region.
+|> 
+|> Any resources that I can use to do this ?  Or more important, can I 
+|> do this ?  Rather find it painful to remember where I iconified a 
+|> window, go back there and deiconify.  Or simply, it is a pain to 
+|> pan around to get to a deiconified window.
+|> 
+|> Thanks,
+|> 
+|> ssridhar@convergent.com
+|> 
+|> 
+Just opened up the distribution.
+";5;comp.windows.x
+"From: dulimart@podunk.cps.msu.edu (Hansye S. Dulimarta)
+Subject: -geometry option.
+Organization: Dept. of Computer Science, Michigan State University
+Lines: 15
+Distribution: world
+NNTP-Posting-Host: podunk.cps.msu.edu
+
+
+Greetings,
+  I need some help with the detail of geometry specification.  I have a
+program that uses Xlib to create a simple window.  I tried to hard code
+the x,y location in XCreateWindow but it didn't work.  I also tried
+XSetStandardProperties, XSetWMHints with no luck.  Could somebody
+enlighten me on this subject.
+
+Hans.
+--
+ Hans Dulimarta [dulimart@cps.msu.edu]
+ Pattern Recognition & Image Processing Laboratory
+ Department of Computer Science
+ Michigan State University
+
+";5;comp.windows.x
+"From: hps@jach.hawaii.edu (Henry Stilmack - JAC Hawaii SysMgr)
+Subject: Help building XView on SPARC Classic
+Lines: 109
+Reply-To: hps@jach.hawaii.edu (Henry Stilmack - JAC Hawaii SysMgr)
+Organization: UK/Canada/Netherlands Joint Astronomy Centre, Hilo, Hawaii
+
+
+Can anyone help with this?
+
+System: SPARC Classic, Solaris 2.1, gcc 2.3.3, X11R5
+
+When I try to build the XView libraries (xview3, patched with the patch from
+the X11R5-Solaris kit), I get the following error:
+
+rm -f ndet_loop.o shared/ndet_loop.o
+gcc -fpcc-struct-return -E   -O2  -I../../.././build/include  -I/usr/X11R5/include  -DSVR4 -DSYSV  -DFUNCPROTO=15 -DOS_HAS_LOCALE -DOS_HAS_MMAP   ndet_loop.c \
+| xstr -l _libxview_xstr -c -
+gcc -fpcc-struct-return -fPIC   -O2  -I../../.././build/include  -I/usr/X11R5/include  -DSVR4 -DSYSV  -DFUNCPROTO=15 -DOS_HAS_LOCALE -DOS_HAS_MMAP   -c x.c \
+-o shared/ndet_loop.o
+In file included from ../../.././build/include/xview/notify.h:29, from ../../.././build/include/xview_private/ntfy.h:24, from x.c:18:
+/usr/include/sys/ucontext.h:25: parse error before `sigset_t'
+/usr/include/sys/ucontext.h:25: warning: no semicolon at end of struct or union
+/usr/include/sys/ucontext.h:26: warning: data definition has no type or storage class
+/usr/include/sys/ucontext.h:29: parse error before `}'
+/usr/include/sys/ucontext.h:29: warning: data definition has no type or storage class
+In file included from ../../.././build/include/xview_private/ntfy.h:24, from x.c:18:
+./../.././build/include/xview/notify.h:286: parse error before `*'
+./../.././build/include/xview/notify.h:286: warning: data definition has no type or storage class
+In file included from x.c:35:
+/usr/include/sys/user.h:226: `MAXSIG' undeclared, outside of functions
+ndet_loop.c:71: `NSIG' undeclared, outside of functions
+ndet_loop.c:85: variable `ndet_sigvec' has initializer but incomplete type
+ndet_loop.c:88: parse error before `*'
+ndet_loop.c:88: warning: data definition has no type or storage class
+ndet_loop.c: In function `ndet_fig_sig_change':
+ndet_loop.c:687: `NSIG' undeclared (first use this function)
+ndet_loop.c:687: (Each undeclared identifier is reported only once
+ndet_loop.c:687: for each function it appears in.)
+ndet_loop.c: In function `ndet_signal_catcher':
+ndet_loop.c:751: parse error before `ucontext_t'
+ndet_loop.c:764: `sigset_t' undeclared (first use this function)
+ndet_loop.c:764: parse error before `newmask'
+ndet_loop.c:766: `newmask' undeclared (first use this function)
+ndet_loop.c:769: `oldmask' undeclared (first use this function)
+ndet_loop.c:777: parse error before `)'
+ndet_loop.c:795: warning: assignment makes pointer from integer without a cast
+ndet_loop.c:798: parse error before `)'
+ndet_loop.c: In function `ndet_send_delayed_sigs':
+ndet_loop.c:825: `sigset_t' undeclared (first use this function)
+ndet_loop.c:825: parse error before `newmask'
+ndet_loop.c:837: `newmask' undeclared (first use this function)
+ndet_loop.c:839: `oldmask' undeclared (first use this function)
+ndet_loop.c:848: parse error before `)'
+ndet_loop.c: At top level:
+ndet_loop.c:1022: parse error before `*'
+ndet_loop.c:85: storage size of `ndet_sigvec' isn't known
+*** Error code 1
+make: Fatal error: Command failed for target `ndet_loop.o'
+rm -f ndet_loop.o shared/ndet_loop.o
+gcc -fpcc-struct-return -E   -O2  -I../../.././build/include  -I/usr/X11R5/include  -DSVR4 -DSYSV  -DFUNCPROTO=15 -DOS_HAS_LOCALE -DOS_HAS_MMAP   ndet_loop.c \
+| xstr -l _libxview_xstr -c -
+gcc -fpcc-struct-return -fPIC   -O2  -I../../.././build/include  -I/usr/X11R5/include  -DSVR4 -DSYSV  -DFUNCPROTO=15 -DOS_HAS_LOCALE -DOS_HAS_MMAP   -c x.c \
+-o shared/ndet_loop.o
+In file included from ../../.././build/include/xview/notify.h:29, from ../../.././build/include/xview_private/ntfy.h:24, from x.c:18:
+/usr/include/sys/ucontext.h:25: parse error before `sigset_t'
+/usr/include/sys/ucontext.h:25: warning: no semicolon at end of struct or union
+/usr/include/sys/ucontext.h:26: warning: data definition has no type or storage class
+/usr/include/sys/ucontext.h:29: parse error before `}'
+/usr/include/sys/ucontext.h:29: warning: data definition has no type or storage class
+In file included from ../../.././build/include/xview_private/ntfy.h:24, from x.c:18:
+./../.././build/include/xview/notify.h:286: parse error before `*'
+./../.././build/include/xview/notify.h:286: warning: data definition has no type or storage class
+In file included from x.c:35:
+/usr/include/sys/user.h:226: `MAXSIG' undeclared, outside of functions
+ndet_loop.c:71: `NSIG' undeclared, outside of functions
+ndet_loop.c:85: variable `ndet_sigvec' has initializer but incomplete type
+ndet_loop.c:88: parse error before `*'
+ndet_loop.c:88: warning: data definition has no type or storage class
+ndet_loop.c: In function `ndet_fig_sig_change':
+ndet_loop.c:687: `NSIG' undeclared (first use this function)
+ndet_loop.c:687: (Each undeclared identifier is reported only once
+ndet_loop.c:687: for each function it appears in.)
+ndet_loop.c: In function `ndet_signal_catcher':
+ndet_loop.c:751: parse error before `ucontext_t'
+ndet_loop.c:764: `sigset_t' undeclared (first use this function)
+ndet_loop.c:764: parse error before `newmask'
+ndet_loop.c:766: `newmask' undeclared (first use this function)
+ndet_loop.c:769: `oldmask' undeclared (first use this function)
+ndet_loop.c:777: parse error before `)'
+ndet_loop.c:795: warning: assignment makes pointer from integer without a cast
+ndet_loop.c:798: parse error before `)'
+ndet_loop.c: In function `ndet_send_delayed_sigs':
+ndet_loop.c:825: `sigset_t' undeclared (first use this function)
+ndet_loop.c:825: parse error before `newmask'
+ndet_loop.c:837: `newmask' undeclared (first use this function)
+ndet_loop.c:839: `oldmask' undeclared (first use this function)
+ndet_loop.c:848: parse error before `)'
+ndet_loop.c: At top level:
+ndet_loop.c:1022: parse error before `*'
+ndet_loop.c:85: storage size of `ndet_sigvec' isn't known
+*** Error code 1
+make: Fatal error: Command failed for target `ndet_loop.o'
+
+Obviously, most of this is due to the problem encountered while including 
+<sys/ucontext.h> - I've tried several approaches, but can't get past this point.
+Any help would be greatly appreciated.
+
+Mahalo nui o kakou,
+_______________________________________________________________________________
+Henry Stilmack                               )  
+Computing Systems Manager                    ) Perform random kindnesses 
+UK/Netherlands/Canada Joint Astronomy Centre )   and senseless acts of beauty
+660 N. A'ohoku Place, Hilo, HI 96720         )   
+hps@jach.Hawaii.Edu       808-969-6530       )    
+------------------------------------------------------------------------------
+";5;comp.windows.x
+"From: hps@KEKOA.JACH.HAWAII.EDU (Henry Stilmack - JAC System Mgr.)
+Subject: Choosing a window manager
+Reply-To: hps@KEKOA.JACH.HAWAII.EDU
+Organization: UK/Canada/Netherlands Joint Astronomy Centre, Hilo, Hawaii
+Lines: 13
+
+A while back (i.e., several months) someone posted a method for allowing 
+a user to choose (via XMenu and something else??) a window manager 
+interactively at X startup time. Could the original poster (or anyone 
+else) please Email a copy of the method to me, as I have lost the 
+original posting? Thanks.
+
+______________________________________________________________________________
+Henry Stilmack                               )  
+Computing Systems Manager                    ) Perform random kindnesses 
+UK/Netherlands/Canada Joint Astronomy Centre )   and senseless acts of beauty
+660 N. A'ohoku Place, Hilo, HI 96720         )   
+hps@jach.Hawaii.Edu       808-969-6530       )    
+------------------------------------------------------------------------------
+";5;comp.windows.x
+"From: J.K.Wight@newcastle.ac.UK (Jim Wight)
+Subject: Re: Button 3 popup menus with Athena widgets
+Organization: The Internet
+Lines: 42
+To: koblas@netcom.com
+Cc: xpert@expo.lcs.mit.edu
+
+>Ok, I'm being driven batty.
+
+>Trying to create popup-menus (ie. button3 press, and a menu
+>appears).  I would really like to use the standard Athena
+>classes to achieve this goal, but for my best attempts
+>I cannot get the menus to come up without using a MenuButton
+>as the parent of the widget tree.  I know this should be
+>possible to to with an XtPopupSpringLoaded() and a
+>little twiddling, but something is escaping me.
+
+Read the documentation for the SimpleMenu (4.2.3 Positioning the SimpleMenu).
+The reference is to the R5 documentation.
+
+I had not done this before but in less than 10 mins I knocked up the following
+Wcl application that does what you want using a Command widget. Even if you are
+not familiar with Wcl the example is so simple it should be pretty obvious what
+is going on. The crucial thing is the use of the XawPositionSimpleMenu and
+MenuPopup actions.
+
+
+Ari.wcChildren:		app
+
+*app.wcCreate:		Command
+*app.wcPopups:		menu
+*app.translations:	#override \n\
+			<Btn3Down>: XawPositionSimpleMenu(menu) MenuPopup(menu)
+
+*menu.wcCreate:		SimpleMenu
+*menu.wcChildren:	one, two, three
+
+*one.wcCreate:		SmeBSB
+
+*two.wcCreate:		SmeBSB
+
+*three.wcCreate:	SmeBSB
+
+
+Jim
+---
+J.K.Wight@newcastle.ac.uk
+Department of Computing Science, University of Newcastle,  Tel: +44 91 222 8238
+Newcastle upon Tyne, NE1 7RU, United Kingdom.              Fax: +44 91 222 8232
+";5;comp.windows.x
+"From: gibanez@dcc.uchile.cl (Gabriel Ibanez C.)
+Subject: key event ----> window
+Originator: gibanez@dcc.uchile.cl
+Nntp-Posting-Host: dcc.uchile.cl
+Organization: Universidad de Chile, Depto. de Ciencias de la Computacion
+Lines: 34
+
+Hi there,
+
+
+  Do someone of you have a program for sending a key event
+to another window but it MUST appear in that window....
+
+I have used xsendevent.tar package but it does not do that !!!
+
+For example, if I get a program executing:
+
+--------------
+#!/bin/sh
+read something
+....
+....
+echo $something
+....
+....
+--------------
+
+and if I send the key event ""<KeyPress>a,<KeyRelease>a""
+to that window then I will get:
+
+something=a
+
+
+Thanks in advance.
+
+
+-- 
+
+   Gabriel Iban~ez C.          
+   gibanez@dcc.uchile.cl
+";5;comp.windows.x
+"From: schlotz@kestrel.unx.sas.com (David Schlotzhauer)
+Subject: xcutsel or xcb question
+Originator: schlotz@kestrel.unx.sas.com
+Nntp-Posting-Host: kestrel.unx.sas.com
+Organization: SAS Institute Inc.
+Lines: 15
+
+
+i want to do something like this:
+
+  date | xcb -s 0 | xcutsel
+
+to get the output of the date command put into the XPRIMARY selection.
+unfortunately, xcutsel is an interactive little bugger and there isn't a
+command argument to tell it to just do it and not put up its little
+window.  so, is there some other command that i CAN use like this?  or,
+is there an analog to xcb that will put stuff in XPRIMARY instead of cut
+buffer 0?
+
+-- 
+David Schlotzhauer                    Phone: (919) 677-8000
+SAS Institute Inc.                   E-Mail: schlotz@unx.sas.com
+";5;comp.windows.x
+"From: tgl+@cs.cmu.edu (Tom Lane)
+Subject: Re: XV 3.00 has escaped!
+Nntp-Posting-Host: g.gp.cs.cmu.edu
+Organization: Independent JPEG Group
+Lines: 29
+
+sherman@lea.csc.ncsu.edu (Chris Sherman) gripes:
+> It really bums me out that xv went shareware.
+
+xv's been shareware for about a year ... hadn't you noticed?
+I don't have a problem with this.  John Bradley has put a *hell*
+of a lot of work into xv, and if he feels that it's time to get
+some monetary reward from it, that's surely his right.
+
+> Can the author legally sell xv?  Xv uses tiff and jpeg code developed
+> by others.  Did the author get permission to sell these works?
+
+Had you bothered to consult the distribution terms of the IJG JPEG
+code (which are right there in the xv distribution), you would have
+observed that we specifically grant permission for use in shareware
+and commercial software.  Sam Leffler's libtiff copyright also grants
+permission for unrestricted use including resale.
+
+> My guess is that now nobody is going to want to help the author
+> maintain the code anymore now that xv has become a commercial product,
+
+""Commercial""?  There's a big difference between a polite request
+for a voluntary donation and commercial, it's-illegal-to-copy-this-
+and-we'll-sic-our-lawyers-on-you software.
+
+I do agree that John's readme file could be a little clearer about
+what he means by personal use.
+
+			regards, tom lane
+			organizer, Independent JPEG Group
+";5;comp.windows.x
+"From: Callum.Downie@brunel.ac.uk (Callum Downie)
+Subject: Re: Mac X and Sun OpenWindows 3
+Keywords: Mac X OpenWindows 3 X
+Organization: Brunel University, West London, UK
+Lines: 48
+
+In article <1t851o$mrd@ux1.cso.uiuc.edu> kerr@ux1.cso.uiuc.edu (Stan Kerr) writes:
+>benj@ossa.hq.nasa.gov (Benjamin Jones) writes:
+>
+>>I've run into a bit of a snag while trying to get Mac X up and running and would appreciate
+>> 
+>> stuff deleted
+>>
+>>are NOT on my local net here, but the above problem holds true for non-local Suns as well.
+>
+>I tried to send this as private mail, but mail to benj@ossa.hq.nasa.gov was
+>rejected, so here it is:
+
+same here
+
+>
+>Here is an extract from the README file that comes with MacX:
+>
+>Users of remote commands with Sun machines may find that their remote commands 
+>appear to do nothing and there is no output from the Sun machine.  This is due 
+>to a feature of the Sun rexecd network daemon which quietly disconnects from 
+>requesting machines that are not known to the Sun|s network address (/etc/hosts
+>or NIS hosts) database.  To successfully use remote commands with a SunOS-based
+>machine, there must be an entry in the network address database for the 
+>Macintosh which is running MacX.
+>
+
+I received similar information/advice about what appears to be the same problem 
+Benjamin has (and I still have).
+NIS has all the information about the Macs
+(I even put explicit entries in /etc/hosts to no avail).
+Monitoring with 'snoop' on my Classic, the initial REXEC packet is sent to
+the the SUN, which sends something to the correct Mac, but nothing appears
+at the Mac.
+'rexecd' is number one suspect, but it's more suble than the README suggests and
+I haven't yet looked into it further.
+
+>-- 
+>
+>Stan Kerr    
+>Computing & Communications Services Office, U of Illinois/Urbana
+>Phone: 217-333-5217  Email: stankerr@uiuc.edu   
+-- 
+callum.downie@brunel.ac.uk
+Faculty of Technology, Brunel University, Uxbridge, UB8 3PH, UK
++44 895 274000 x2730
+
+4.003 Die meisten Saetze und Fragen, welche ueber philosophische Dinge geschrieben worden sind, sind nicht falsch, sondern unsinnig.
+7     Wovon man nicht sprechen kann, darueber muss man schweigen.
+";5;comp.windows.x
+"From: STU_JWSHELBY@VAX1.ACS.JMU.EDU (JOSEPH W SHELBY)
+Subject: Xdec X11R5 server and DECstation 5000/2[0|5] sans DECnet
+Organization: James Madison University
+X-News-Reader: VMS NEWS 1.24
+Lines: 9
+
+Has anybody built an X11R5 server that can run on a Personal Decstation
+5000 line with ultrix 4.3?  The only catch is that being ""personal"" machines,
+we did not install DECnet onto them, which the Xdec server on gatekeeper
+requires.
+
+any replies welcome...
+joe shelby
+stu_jwshelby@vax1.acs.jmu.edu
+
+";5;comp.windows.x
+"From: jessea@u013.me.vp.com (Jesse W. Asher)
+Subject: Compiling mh-6.8 (and xmh) on SCO 3.2.4.
+Organization: Varco-Pruden Buildings
+Lines: 47
+
+I'm trying to get MH compiled (and then xmh) and I'm having some problems.
+I've got mh-6.8, using gcc on SCO 3.2.4.  My MH file is listed below.  Does
+anyone have any suggestions on what I can add to get it to compile??
+
+===========
+
+bin             /usr/local/bin
+debug           off
+etc             /usr/local/lib/mh
+mail            /usr/mail
+mailgroup       mail
+mandir          /usr/man
+manuals         gen
+chown           /bin/chown
+editor          prompter
+remove          /bin/mv -f
+# if no TCP/IP sendmail is available: change mts entry to sendmail
+mts             sendmail/smtp
+bboards         off
+bbdelivery      off
+bbhome          /usr/spool/bboards
+mf              off
+pop             off
+# options       SEE BELOW
+cc              gcc
+ccoptions       -O -ansi -D__STDC__=0 -DSYSV -DSYSV386 -DSCO -D_SVID
+curses          -lcurses
+ldoptions       -s
+ldoptlibs
+lex             lex
+sprintf         int
+sharedlib       off
+slibdir         /usr/local/lib
+oldload         off
+ranlib          off
+
+# define BIND only of the BSD4.3 named (TCP/IP) is used
+# define SOCKETS only if the system has BSD4.3 sockets (TCP/IP)
+options         ATZ BIND DUMB MHE MHRC MORE='""/usr/bin/more""'
+options         OVERHEAD SHADOW SOCKETS SYS5 SYS5DIR
+options         TZNAME WHATNOW
+
+-- 
+      Jesse W. Asher                                          (901)762-6000
+                             Varco-Pruden Buildings
+                 6000 Poplar Ave., Suite 400, Memphis, TN  38119
+    Internet: jessea@vpbuild.vp.com                   UUCP: vpbuild!jessea
+";5;comp.windows.x
+"From: rick@ee.uwm.edu (Rick Miller)
+Subject: How to Make Your Own X-Face: in 0x000C Easy Steps!
+Summary: How's this?
+Organization: Just me.
+Lines: 46
+NNTP-Posting-Host: 129.89.2.33
+X-Face: %:A<m@Dob}BO""'E"",EEQGbn7qy(En7aS5U([k//""G{6^HIbY9X8~+PD($}6szF""&vVxCXSn
+ 8mw^0G#nVHE%W,`X""[j0s{r.~%zs:O|HFU=LwzYgH
+
+Will someone who can 'see' the X-Face included in this header please reply
+and tell me if it turned out okay?
+
+I'm not all too sure about my viewing software.  I *hand*-converted this
+thing in ""vi"" from a Sun rasterfile... what a pain!
+
+For folks who haven't the slightest, it went like this:
+
+-------------------------------------------------------------
+
+		How to Make Your Own X-Face:
+		   in 0x000F Easy Steps!
+
+	1. Scan my Drivers' License into a *.PCX file.
+	2. Use WinGIF to 'trim' my face out of the license,
+		'reduce' it by half, and
+		convert it to *.BMP.
+	3. Use Paintbrush to touch up manually.
+	4. Use WinGIF to 'reduce' it by half again.
+	5. Use Paintbrush to touch up again.
+	6. Use WinGIF to 'reduce' it by half *again*
+		and convert it to *.GIF.
+
+		[now over to the UNIX side...]
+
+	7. Use Snapshot to convert the *.GIF to a Sun rasterfile.
+	8. Use IconEdit to touch it up and
+		convert it to an X bitmap.
+	9. Use ""vi"" (yes, a *text* editor) to manually convert
+		the rasterfile into the ""Uncompressed X-Face"" format.
+		(Lots of global ""ed"" commands, and by the time you're
+		 done you'll mirror hex bytewise in your sleep!!)
+
+		[now over to the *Linux* side...]
+
+	A. Use ""compface"" to convert it to what you see here:
+
+ %:A<m@Dob}BO""'E"",EEQGbn7qy(En7aS5U([k//""G{6^HIbY9X8~+PD($}6szF""&vVxCXSn
+ 8mw^0G#nVHE%W,`X""[j0s{r.~%zs:O|HFU=LwzYgH
+
+	B. Try viewing it by whatever means you have available.
+	C. Go back to step 9, but do it *right* this time.
+
+Rick Miller  <rick@ee.uwm.edu> | <ricxjo@discus.mil.wi.us>   Ricxjo Muelisto
+Send a postcard, get one back! | Enposxtigu bildkarton kaj vi ricevos alion!
+          RICK MILLER // 16203 WOODS // MUSKEGO, WIS. 53150 // USA
+";5;comp.windows.x
+"From: mhung@capricorn.taisel.COM.TW (Michael Hung)
+Subject: multi-byte fonts
+Organization: The Internet
+Lines: 16
+To: xpert@expo.lcs.mit.edu
+
+
+
+I am wondering how to change the English fonts in an existed
+API to some multi-bytes fonts ? (such as Chinese, Japanese...)
+Someone told me X11R5 supports some internationalization
+features, but I cannot find any examples for my need. Is there
+anybody has done some similar jobs ?
+
+By the way, all the English fonts should be replace by Chinese or
+Japanese fonts, that means in windows, menubar, button....
+
+That will be great if someone can share us what you have done.
+Thanks in advance.
+
+M.C. Hung
+
+";5;comp.windows.x
+"From: cek@sdc.boeing.com (Conrad Kimball)
+Subject: Re: Problem with R4 release
+Organization: Boeing Computer Services, Seattle, WA
+Lines: 48
+Nntp-Posting-Host: zulu
+
+In article <MCGARY.93May12172612@mojo.intellection.com>, mcgary@intellection.com (Mike McGary) writes:
+|> In article <1sr3klINNauq@news.u.washington.edu> pramod@stein.u.washington.edu (Pramod Mahadev) writes:
+|> 
+|> >   ld: Unidentified external symbol
+|> >      _get_wmShellWidgetclass
+|> >      _get_applicationshellwidgetclass
+|> >
+|> >     I use -lXaw -lXmu -lXext -lX11 -lXt not in this order but in a proper order
+|> >
+|> >   I am wondering if there has to be some changes in my link libraries or should
+|> >   i include some more libraries.
+|> >
+|> >   ANy help in this matter will be very useful and highly appreciated
+|> >
+|> 
+|> We get this too.  If you put -Bstatic into your options it goes away. 
+|> Things seem to run ok without it...must not be called very often.
+
+From the FAQ:
+
+Subject:  96)! What is this link problem with libXmu on SunOS 4.1.[23]?
+
+        In SunOS 4.1.2 Sun fixed a shared-library bug in ld which conflicts
+with the way X builds the shared Xmu library, causing these symbols, notably,
+to be undefined when building some X11 clients:
+        _get_wmShellWidgetClass
+        _get_applicationShellWidgetClass
+Compiling ""-Bstatic -lXmu -Bdynamic"" appears to work.
+
+To solve the problem if you are using OpenWindows 3.0 (X11R4-based Xt), please
+contact your local Sun office and request the following patches:
+
+Patch i.d.      Description
+100512-02       4.1.x OpenWindows 3.0 libXt Jumbo patch
+100573-03       4.1.x OpenWindows 3.0 undefined symbols when using
+                        shared libXmu
+
+[Greg Earle, earle@Sun.COM; 7/92]
+
+A source patch for use with the MIT X11R4 libraries was developed by Conrad
+Kimball (cek@sdc.boeing.com); it retrofits into R4 some fixes made in R5 to
+get around this problem. The patch is on export in [1/93]
+        contrib/X11R4_sunos4.1.2_patch_version3.Z
+
+--
+Conrad Kimball        | Client Server Tech Services, Boeing Computer Services
+cek@sdc.cs.boeing.com | P.O. Box 24346, MS 7A-35
+(206) 865-6410        | Seattle, WA  98124-0346
+";5;comp.windows.x
+"From: bouronm@uproar.enet.dec.com (Marc Bouron)
+Subject: Re: Looking for a file-manager under TWM
+Organization: Digital Equipment Corporation
+Lines: 27
+
+
+In article <1993May19.124004@ips.cs.tu-bs.de>, sommer@ips.cs.tu-bs.de (Thorsten Sommer) writes...
+>Hi out there!
+> 
+>Every command-line-shell-favourating user: Close your ears, ehm, eyes...
+> 
+>I'm looking for a X file-manager which can be driven under TWM.
+>Somebody told me last night, there is one under OpenWindows
+>(and there certainly is one under MS-Windows :-#).
+> 
+>But I'd like an X-one, you know, with icon's, click-and-drag, directory-structures
+>shown in a graphic-layout, a paper-basket etc. ...
+> 
+>Anybody got an idea?
+
+I've recently joined the Motif world, so I'd like a similar tool for
+Motif.  I've bene used to the OpenWin one in the past and miss it.
+
+Cheers,
+
+[M][a][r][c]
+
+**  ---------------------------  **  -----------------------------  **
+**  Marc CR Bouron               **  DESISCo Ltd.                   **
+**  +44 (0)895 208260            **  Harefield Place, The Drive,    **
+**  Marc.Bouron@ime.mts.dec.com  **  Uxbridge, Middlesex, UB10 8AQ  **
+**  ---------------------------  **  -----------------------------  **
+";5;comp.windows.x
+"From: smarks@trantor.Eng.Sun.COM (Stuart Marks)
+Subject: Re: Xt intrinsics: slow popups
+Organization: Sun Microsystems, Inc.
+Lines: 37
+Distribution: world
+Reply-To: smarks@Eng.Sun.COM
+NNTP-Posting-Host: trantor
+
+In article <1993Apr20.114824.9110@alex.com>, bryan@alex.com (Bryan Boreham) writes:
+|> 
+|> The shell is waiting for the window-manager to respond to its
+|> positioning request.  The window-manager is not responding because
+|> it thinks the window is already in the right place.
+|> 
+|> Exactly *why* the two components get into this sulk is unclear to
+|> me; all information greatly received.
+
+This problem is caused by a bad interaction between the way olwm reparents
+windows, a misfeature of the X protocol, and a bug in the Xt intrinsics.  
+
+The Intrinsics bug is that it ignores the (x,y) position given in
+ReparentNotify events.  Olwm is structured in such a way that, when a window
+is popped down, the last event the client receives is a ReparentNotify event. 
+At this point, the Intrinsics' notion of the shell's location is out of date.
+
+If a SetValues is done using the same (x,y) position, the Intrinsics thinks it
+needs to move the shell, so it issues a ConfigureWindow request to move it
+there.  However, a (mis)feature of the X protocol is that a ConfigureWindow
+request that has no effect will generate no ConfigureNotify event.  The
+Intrinsics thus waits for an event that will never arrive, and times out after
+wmTimeout has expired.  (Actually, things are somewhat more complex because
+the request is redirected to the window manager, but the net result is the
+same.)
+
+The solution is for the Intrinsics to note the (x,y) positioning information
+in ReparentNotify events.  This has been implemented and is available in X11R5
+public fix 20.  This is XBUG 5513 for those of you who are interested in
+gorier details.
+
+s'marks
+
+-- 
+Stuart W. Marks				stuart.marks@eng.sun.com
+Window Systems Technology		2550 Garcia Ave. M/S 21-228
+SunSoft, Inc.				Mountain View, CA 94043
+";5;comp.windows.x
+"From: kem@prl.ufl.edu (Kelly Murray)
+Subject: Re: Looking for X windows on a PC
+Organization: University of Florida Parallel Reasearch Lab.
+Lines: 30
+Distribution: world
+NNTP-Posting-Host: zoyd.prl.ufl.edu
+Keywords: IBM PC, X windows, windows
+
+In article <1993May14.021655.27374@labtam.labtam.oz.au>, graeme@labtam.labtam.oz.au (Graeme Gill) writes:
+|> In article <hastyC6zGqC.Fux@netcom.com>, hasty@netcom.com (Amancio Hasty Jr) writes:
+|> 
+|> > >>>*BUT*  your performance WILL suck lemons running an Xserver on a clone.
+|> > 
+|> > I have a clone almost with no name generating 91k xstones on a 486/33Mhz
+|> > system.
+|> > 
+|> > 
+|> > >>>I can get 15"" Tektronix XP11 terminals for under $900, and the performance
+|> > >>>is over 80000 Xstones.....
+|> > 
+|> > >You will not come even CLOSE to the performance of an XP10 series, plus you 
+|> > >
+|> > Excuse me, but with a 486/50 256k cache, S3 928 ISA card, 8Mb XS3 (X11R5) running 386bsd  you can get 100k+ xstones at 1024x768 65Mhz which I doubt 
+|> 
+|> This is hardly apples to apples. Try running the benchmark over a
+|> network to the clone and, and if you're still getting 100K Xstones
+|> then you've got a good machine. X terminals aren't just a server you know.....
+|> 
+|> 	Graeme Gill.
+
+I would further add that a 486/50,S3/928,8mb,15"",200mbDISK is going to cost
+/WAY/ more than $900, probably $3,000.  Color makes it not apples/apples too.
+Xterminals provide better price/performance than PCs.  You can make a PC
+much cheaper, and perform much worse, and you can make PC's perform great, and
+cost more.  You pay extra for the additional functinality and expandability
+of a PC.  For home user, that extra functionality is worth the added cost.
+
+ -Kelly Murray
+";5;comp.windows.x
+"From: schit@ctp.com (Subbarao Chitturi)
+Subject: Starting X windows
+Organization: Cambridge Technology Partners
+Lines: 40
+
+As soon as I am logged into Linux, I type
+
+# xinit
+
+Setting TCP SO_LINGER : Protocol not available
+no SIOCGIFCONF
+XFree86 Version 1.2/X Window System
+(protocol Version 11, revision 0, vendor release 5000)
+configured drivers:
+	VGA256(256 colout SVGA):
+	  et4000, et 3000, PVGA1, gvga, ati, tvga8900c, tgva9000
+    (using VT number 7)
+Mouse : type : Mouse Systems, device : /dev/mouse, baudrate:1200
+Font Path set to ""usr/lib/X11/fonts/Type1, /usr/lib/X11/fonts/75 dpi/,
+				  /usr/lib/X11/fonts/Speedo, /usr/lib/X11/fonts/Bitstream1/,
+				  /usr/lib/X11/fonts/misc.
+VGA 256 : et4000 ( mem : OK numclocks : 16 )
+VGA 256 : Clocks : 25.2 28.3 47.8 41.2 25.4 0.0 47.6 0.0
+VGA 256 : Clocks : 0.0  0.0  0.0  0.0  0.0  0.0 0.0  41.3
+Vga 256 : Too little memory for virtual resolution 1024 1204
+
+*** A configured device found, but display modes could not be resolved. ***
+
+Fatal server error:
+no screens found
+giving up.
+xinit : Interrupted system call(errno 4) : Unable to connect to X server
+xinit : No such process(errno 3) : Server error.
+
+===========================================================================
+
+Why am I getting these messages when I type in xinit?
+Is there a configuration file for X-Windows(like config.sys for MSDOS)?
+How do I start the X session( from shell )?
+
+
+______________________________________________________
+
+Subbarao Chitturi
+schit@ctp.com
+";5;comp.windows.x
