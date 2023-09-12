@@ -1,0 +1,26 @@
+{
+  "topic_1": [
+    {
+      "x": 1.23,
+      "y": 2.534,
+      "doc_short": "some text"
+    },
+    {
+      "x": 2.2333,
+      "y": 4.1231,
+      "doc_short": "some different text"
+    }
+  ],
+  "topic_2": [
+    {
+      "x": 1.23,
+      "y": 2.534,
+      "doc_short": "some text"
+    },
+    {
+      "x": 2.2333,
+      "y": 4.1231,
+      "doc_short": "some different text"
+    }
+  ]
+}
